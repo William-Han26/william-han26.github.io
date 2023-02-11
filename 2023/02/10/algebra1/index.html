@@ -57,7 +57,7 @@
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/">数学</a>
+    <a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/">数学</a>►<a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a>►<a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/">抽象代数</a>
   </div>
 
   </div>
@@ -91,7 +91,6 @@
 <h3 id="基本定义-1">基本定义</h3>
 <p>关于群, 子群, 同态, 商结构, 积结构.</p>
 <h4 id="群-1">群</h4>
-<div class="deff">
 <p><strong>定义 2.1</strong> (群). <em>称集合<span
 class="math inline">\(G\)</span>与运算<span class="math inline">\(\cdot
 : G\times G \rightarrow G\)</span>为群, 当且仅当满足以下公理, <span
@@ -106,27 +105,19 @@ a^{-1}a = e\)</span></em></p></li>
 </ol>
 <p><em>若又满足<span class="math inline">\((\forall a, b \in G)\ ab =
 ba\)</span>, 则称为Abel群.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 2.2</strong> (群直积). <em><span
 class="math inline">\(G, H\)</span>群, 称<span
 class="math inline">\(G\times H\)</span>为群直积, 即其为集合<span
 class="math inline">\(G\times H\)</span>与运算<span
 class="math inline">\(((x, a), (y, b)) \mapsto (xy,
 ab)\)</span>.</em></p>
-</div>
-<div class="remark">
 <p><strong>注记 2.1</strong>. <em>若用加法运算, 则记为直和<span
 class="math inline">\(G \oplus H\)</span>.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 2.3</strong> (中心). <em>称<span class="math inline">\(C
 \subset G\)</span>为中心, 当且仅当<span class="math inline">\((\forall
 a\in G, c\in C)\ ac = ca\)</span>.</em></p>
-</div>
 <h4 id="子群">子群</h4>
 <p>考虑群<span class="math inline">\(G\)</span>.</p>
-<div class="deff">
 <p><strong>定义 2.4</strong> (子群). <em>集合<span
 class="math inline">\(H \subset G\)</span>并且乘法<span
 class="math inline">\(\cdot\)</span>在集合<span
@@ -134,48 +125,28 @@ class="math inline">\(H\times H\)</span>其上的限制封闭且满足群论公�
 则<span class="math inline">\(H\)</span>为<span
 class="math inline">\(G\)</span>的子群, 记为<span
 class="math inline">\(H &lt; G\)</span>.</em></p>
-</div>
-<div class="prop">
 <p><strong>命题 2.5</strong> (子群判定). <em><span
 class="math inline">\(H &lt; G \iff (\forall a, b\in H)\ ab^{-1}\in
 H\)</span></em></p>
-</div>
-<div class="proof">
 <p><em>Proof.</em> 参考相关书目. ◻</p>
-</div>
 <h5 id="乘积定义">乘积定义</h5>
-<div class="deff">
 <p><strong>定义 2.6</strong> (子群的乘法). <em><span
 class="math inline">\(H, K \subset G\)</span>, <span
 class="math inline">\(HK := \{hk \mid h\in H \land k\in
 K\}\)</span></em></p>
-</div>
-<div class="remark">
 <p><strong>注记 2.2</strong>. <em>子群的乘法不一定为子群.</em></p>
-</div>
-<div class="prop">
 <p><strong>命题 2.7</strong>. <em><span class="math inline">\(HK = KH
 \iff KH\)</span>为子群.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 2.8</strong> (元素与子群的乘法). <em><span
 class="math inline">\(\{a\}, H \subset G\)</span>, <span
 class="math inline">\(aH := \{ah \mid h \in H\}\)</span></em></p>
-</div>
-<div class="deff">
 <p><strong>定义 2.9</strong> (子群的逆). <em><span
 class="math inline">\(A^{-1}:= \{a^{-1}\mid a\in A\}\)</span>.</em></p>
-</div>
-<div class="prop">
 <p><strong>命题 2.10</strong> (子群的交仍是子群). <em><span
 class="math inline">\(H, K &lt; G\)</span>, <span
 class="math inline">\(H \cap K (&lt; G)\)</span>称为子群的交.</em></p>
-</div>
-<div class="proof">
 <p><em>Proof.</em> 易证. ◻</p>
-</div>
 <h5 id="生成">生成</h5>
-<div class="deff">
 <p><strong>定义 2.11</strong> (生成). <em><span class="math inline">\(X
 \subset G\)</span>, 称子群<span class="math inline">\(H\)</span>为<span
 class="math inline">\(X\)</span>生成的子群, 记作<span
@@ -184,53 +155,37 @@ class="math inline">\(H\)</span>是包含<span
 class="math inline">\(X\)</span>的(关于<span
 class="math inline">\(\subset\)</span>序的)最小子群, 换言之<span
 class="math inline">\(H = \bigcap_{K &lt; G} K\)</span>.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 2.12</strong> (单元素的生成). <em>单元素集合<span
 class="math inline">\(\{a\}\)</span>的生成子群<span
 class="math inline">\({\langle\{a\}\rangle}\)</span>为<span
 class="math inline">\(a\)</span>的生成子群<span
 class="math inline">\({\langle a\rangle}\)</span>.</em></p>
-</div>
-<div class="prop">
 <p><strong>命题 2.13</strong> (生成群的结构). <em><span
 class="math inline">\({\langle X\rangle} = \{\prod_i x_i^{\delta_i}\mid
 x_i\in X \land \delta_i = \pm 1 \land i\in I \land |I| &lt;
 +\infty\}\)</span></em></p>
-</div>
-<div class="cor">
 <p><strong>推论 2.14</strong> (单元素生成群 / 循环群). <em><span
 class="math inline">\({\langle a\rangle} = \{\ldots a^{-1}, 1, a,
 \ldots\}\)</span></em></p>
-</div>
-<div class="prop">
 <p><strong>命题 2.15</strong>. <em><span class="math inline">\(G =
 {\langle g\rangle} \land H = {\langle h\rangle} \implies(\forall x\in
 G\times H)\ |x| \mid \operatorname{l.c.m.}(|g|, |h|)\)</span></em></p>
-</div>
-<div class="cor">
 <p><strong>推论 2.16</strong> (Abel群中的生成群). <em><span
 class="math inline">\({\langle X\rangle} = \{\prod_i x_i^{\lambda_i}\mid
 x_i \in X \land (i\neq j\rightarrow x_i\neq x_j) \land \lambda_i \in
 \mathbb{Z}\land i\in I \land |I| &lt; +\infty\}\)</span></em></p>
-</div>
-<div class="deff">
 <p><strong>定义 2.17</strong> (子群的并). <em>称子群<span
 class="math inline">\(L\)</span>为子群<span class="math inline">\(H,
 K\)</span>的并, 记作<span class="math inline">\(H\lor K\)</span>,
 当且仅当<span class="math inline">\(L = {\langle H \cup
 K\rangle}\)</span>.</em></p>
-</div>
 <h4 id="商群">商群</h4>
 <h5 id="陪集与正规子群">陪集与正规子群</h5>
-<div class="deff">
 <p><strong>定义 2.18</strong> (陪集). <em>称<span
 class="math inline">\(X (\subset G)\)</span>为<span
 class="math inline">\(H (&lt; G)\)</span>在<span
 class="math inline">\(G\)</span>中的一个(左)陪集, 当且仅当<span
 class="math inline">\((\exists a\in G)\ X = aH\)</span>.</em></p>
-</div>
-<div class="remark">
 <p><strong>注记 2.3</strong>.</p>
 <ol type="1">
 <li><p><em>陪集<span class="math inline">\(aH = \{b\mid a^{-1}b\in
@@ -243,23 +198,17 @@ a^{-1}b\in H\)</span>为等价关系, 对于<span
 class="math inline">\(a\)</span>的等价类为<span
 class="math inline">\(aH\)</span>.</em></p></li>
 </ol>
-</div>
-<div class="deff">
 <p><strong>定义 2.19</strong> (代表元系). <em>称<span
 class="math inline">\(A\)</span>为子群<span
 class="math inline">\(H\)</span>的(左)陪集代表元系, 当且仅当<span
 class="math inline">\((\forall a, b \in A)\ aH \neq bH \land
 \bigcup_{a\in A} aH = G\)</span>.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 2.20</strong> (正规子群). <em>称<span
 class="math inline">\(H &lt; G\)</span>为正规子群, 记为<span
 class="math inline">\(H\lhd G\)</span>, 当且仅当<span
 class="math inline">\((\forall x \in H)\ xH = Hx\)</span>.</em></p>
-</div>
 <p>以下认为<span class="math inline">\(H &lt; G \land K \lhd
 G\)</span>.</p>
-<div class="prop">
 <p><strong>命题 2.21</strong> (正规性).</p>
 <ol type="1">
 <li><p><em><span class="math inline">\(K \cap H \lhd
@@ -269,49 +218,37 @@ H\)</span></em></p></li>
 <li><p><em><span class="math inline">\(KH = K\lor H =
 HK\)</span></em></p></li>
 </ol>
-</div>
-<p>::: <strong>命题 2.22</strong> (正规子群的判定). <em><span
+<p><strong>命题 2.22</strong> (正规子群的判定). <em><span
 class="math inline">\(H\lhd G \iff aH = Ha
 \iff\)</span>左陪集为右陪集<span class="math inline">\(\iff
-aNa^{-1}\subset N\)</span>.</em> :::</p>
+aNa^{-1}\subset N\)</span>.</em></p>
 <h5 id="商群-1">商群</h5>
-<div class="deff">
 <p><strong>定义 2.23</strong> (商群). <em>称集合<span
 class="math inline">\(\{aK\mid a\in G\}\)</span>为<span
 class="math inline">\(G\)</span>对<span
 class="math inline">\(K\)</span>的商群, 记为<span
 class="math inline">\(G / K\)</span>, 其上乘法定义为<span
 class="math inline">\((aK, bK) \mapsto abK\)</span>.</em></p>
-</div>
-<div class="proof">
 <p><em>Proof.</em> 需证明良定义: <span class="math inline">\((\forall a,
 b \in G, \forall c, d \in G)\ aK = cK \land bK = dK \implies abK = cdK
 \iff (cd)^{-1}(ab) \in K \iff d^{-1}c^{-1}ab\in K \iff d^{-1}Kb \in K
 \iff Kb = dK \iff Kb = bK \iff K\lhd G\)</span> ◻</p>
-</div>
 <h4 id="同构">同构</h4>
 <p>以下, 我们默认<span class="math inline">\(G, H\)</span>为群, <span
 class="math inline">\(x, y, z \in G \land a, b, c \in H\)</span>.</p>
-<div class="deff">
 <p><strong>定义 2.24</strong> (同态). <em>称函数<span
 class="math inline">\(f : G \rightarrow H\)</span>为群<span
 class="math inline">\(G\)</span>到<span
 class="math inline">\(H\)</span>的同态, 当且仅当<span
 class="math inline">\(\phi\)</span>保持群运算, 即<span
 class="math inline">\(f(xy) = f(x)f(y)\)</span>.</em></p>
-</div>
-<div class="cor">
 <p><strong>推论 2.25</strong>. <em><span class="math inline">\(f(a^{-1})
 = f(a)^{-1}\land f(e) = e\)</span></em></p>
-</div>
-<div class="deff">
 <p><strong>定义 2.26</strong> (同构). <em>若同态<span
 class="math inline">\(f\)</span>为函数单射则为单同态,
 同理有满同态.</em></p>
 <p><em>若同态<span class="math inline">\(f\)</span>既单又满,
 则为同构.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 2.27</strong> (同态的核与像).
 <em>定义群论范畴上的同态<span class="math inline">\(f : G\rightarrow
 H\)</span>的</em></p>
@@ -321,15 +258,11 @@ e\}\)</span>.</em></p></li>
 <li><p><em>像<span class="math inline">\(\operatorname{Im}f :=
 \{f(x)\mid x \in G\}\)</span>.</em></p></li>
 </ol>
-</div>
 <p>下面认为<span class="math inline">\(f : G \rightarrow
 H\)</span>为同构.</p>
-<div class="prop">
 <p><strong>命题 2.28</strong> (核为正规子群, 像为子群). <em><span
 class="math inline">\(\ker f \lhd G \land \operatorname{Im}f &lt;
 G\)</span>.</em></p>
-</div>
-<div class="proof">
 <p><em>Proof.</em> 对于<span
 class="math inline">\(\ker\)</span>显然为子群, 对于正规性: <span
 class="math inline">\((\forall x\in G, k \in \ker f)\ f(xkx^{-1}) =
@@ -339,8 +272,6 @@ fx^{-1}\subset\ker f \iff \ker f \lhd G\)</span>, 由于.</p>
 class="math inline">\((\forall a, b \in \operatorname{Im}f, \exists x, y
 \in G) f(x) = a, f(y) = b\)</span>, 从而<span class="math inline">\(ab =
 f(x)f(y) = f(xy) \in \operatorname{Im}f\)</span>. ◻</p>
-</div>
-<div class="prop">
 <p><strong>命题 2.29</strong> (同构等价表述).</p>
 <ol type="1">
 <li><p><em>同构<span
@@ -348,12 +279,8 @@ class="math inline">\(\iff\)</span>有双边逆.</em></p></li>
 <li><p><em>同构<span class="math inline">\(\iff \ker f =
 \{e\}\)</span></em></p></li>
 </ol>
-</div>
-<div class="proof">
 <p><em>Proof.</em> 显然. ◻</p>
-</div>
 <h5 id="同构定理">同构定理</h5>
-<div class="prop">
 <p><strong>命题 2.30</strong> (正则射影与嵌入映射). <em><span
 class="math inline">\(K \lhd G, H &lt; G\)</span></em></p>
 <ol type="1">
@@ -362,18 +289,12 @@ class="math inline">\(K \lhd G, H &lt; G\)</span></em></p>
 <li><p><em><span class="math inline">\(i : H \rightarrow G : x \mapsto
 x\)</span>.</em></p></li>
 </ol>
-</div>
-<div class="cor">
 <p><strong>推论 2.31</strong>. <em><span class="math inline">\(H
 \rightarrow HK / K\)</span>存在自然的映射<span class="math inline">\(f =
 \pi\circ i\)</span>.</em></p>
-</div>
-<div class="prop">
 <p><strong>命题 2.32</strong>. <em><span class="math inline">\(K \lhd G
 \land K &lt; \ker f \implies(\exists! \bar f)\ \bar f\circ\pi =
 f\)</span>即</em></p>
-</div>
-<div class="thm">
 <p><strong>定理 2.33</strong> (第一同构定理).</p>
 <ol type="1">
 <li><p><em><span class="math inline">\(G / \ker f \simeq
@@ -382,58 +303,40 @@ f\)</span>即</em></p>
 <li><p><em><span class="math inline">\(f\implies(\exists! \bar f)\
 i\circ\bar f\circ\pi = f\)</span></em></p></li>
 </ol>
-</div>
-<div class="thm">
 <p><strong>定理 2.34</strong> (第二同构定理). <em><span
 class="math inline">\(H &lt; G \land K \lhd G \implies H/(H\cap K)
 \simeq HK / K\)</span>.</em></p>
-</div>
-<div class="thm">
 <p><strong>定理 2.35</strong> (第三同构定理). <em><span
 class="math inline">\(K &lt; H \land K, H \lhd G \implies(G / K) / (H /
 K) \simeq G / H\)</span></em></p>
-</div>
-<div class="thm">
 <p><strong>定理 2.36</strong> (像集). <em><span class="math inline">\(f:
 G \rightarrow H\)</span>为满同态, <span class="math inline">\(S_f(G) :=
 \{K\mid \ker f &lt; K &lt; G\}, S(H) := \{K\mid K &lt; H\}\)</span>, 则
 <span class="math inline">\(F : S_f(G) \rightarrow S(H) : K \mapsto
 f\{K\}\)</span>为一一映射, 且将正规子群映成正规子群.</em></p>
-</div>
-<div class="proof">
 <p><em>Proof.</em> 显然有映射的良定义. 对于正规子群, 我们有<span
 class="math inline">\((\forall k \in K)\ f(xkx^{-1}) =
 f(x)f(k)f(x)^{-1}= yf(k)y^{-1}\implies(\forall y\in H)\
 yf\{K\}y^{-1}\subset f\{K\}\)</span> ◻</p>
-</div>
-<div class="thm">
 <p><strong>定理 2.37</strong>. <em><span class="math inline">\(N\lhd G
 \implies G / N\)</span>中的(正规)子群形如<span class="math inline">\(K /
 N\)</span>, <span class="math inline">\(K\)</span>为<span
 class="math inline">\(G\)</span>中的(正规)子群 <span
 class="math inline">\(\land K \lhd G \iff K / N \iff G /
 N\)</span>.</em></p>
-</div>
 <h4 id="直积与直和">直积与直和</h4>
 <p>在中我们定义了二元直积, 由于结合律我们可以推广到任意有限元直积,
 现在我们需要定义无限元直积.</p>
-<div class="deff">
 <p><strong>定义 2.38</strong> (直积 / 完全直和). <em><span
 class="math inline">\(\{G_i\}_i\)</span>是一族群, 他们的直积<span
 class="math inline">\(\prod_iG_i\)</span>是它们的笛卡尔积与对应位置相乘作为乘法的群.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 2.39</strong> (弱直积 / 直和). <em>直积<span
 class="math inline">\(\prod
 G\)</span>的所有分量仅有有限个不为其对应子群的单位元的元素构成的子群<span
 class="math inline">\(H = \prod^{w} G\)</span>称为弱直积.</em></p>
-</div>
-<div class="prop">
 <p><strong>命题 2.40</strong> (有限元). <em>有限元情况下,
 直积与弱直积相同.</em></p>
-</div>
 <p>以下认为<span class="math inline">\(G_i\)</span>为一族群.</p>
-<div class="prop">
 <p><strong>命题 2.41</strong>.</p>
 <ol type="1">
 <li><p><em><span class="math inline">\(\prod^w G \lhd \prod
@@ -443,30 +346,20 @@ G \rightarrow G_i : f\mapsto f(i)\)</span>与嵌入(单同态)<span
 class="math inline">\(i : G_i\rightarrow\prod^w G : x \mapsto
 x\delta(i)\)</span>.</em></p></li>
 </ol>
-</div>
-<div class="cor">
 <p><strong>推论 2.42</strong>. <em>嵌入将子群<span
 class="math inline">\(G_i\)</span>映成<span
 class="math inline">\(\prod^w G\)</span>中的正规子群.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 2.43</strong> (映射的乘积). <em><span
 class="math inline">\(f_i : G_i \rightarrow H_i, f := \prod_i f_i :
 \prod G \rightarrow\prod H : a
 \rightarrow\{f_i(a_i)\}_i\)</span>.</em></p>
-</div>
-<div class="thm">
 <p><strong>定理 2.44</strong>. <em><span class="math inline">\(f(\prod^w
 G) \subset\prod^w H \land \ker f = \prod_i \ker f_i \land
 \operatorname{Im}f = \prod \operatorname{Im}f_i\)</span>.</em></p>
-</div>
-<div class="cor">
 <p><strong>推论 2.45</strong>. <em><span class="math inline">\(\prod G /
 \prod N \simeq \prod_i (G_i / N_i) \land \prod^w G / \prod^w N \simeq
 \prod^w_i (G_i / N_i)\)</span></em></p>
-</div>
 <h5 id="泛性质">泛性质</h5>
-<div class="thm">
 <p><strong>定理 2.46</strong> (直积是群范畴的积).
 <em>若在群范畴内讨论问题, 以下说法等价.</em></p>
 <ol type="1">
@@ -476,8 +369,6 @@ G_i, \exists! f : H \rightarrow\prod G)\ f_i = \pi_i\circ
 f\)</span>.</em></p></li>
 <li></li>
 </ol>
-</div>
-<div class="thm">
 <p><strong>定理 2.47</strong> (直和是Abel群范畴的余积).
 <em>若在Abel群范畴内讨论问题, 以下说法等价.</em></p>
 <ol type="1">
@@ -488,9 +379,7 @@ H, \exists! f : \prod G \rightarrow H)\ f_i = f\circ
 i\)</span></em></p></li>
 <li></li>
 </ol>
-</div>
 <h5 id="内弱直积与剩余定理">内弱直积与剩余定理</h5>
-<div class="thm">
 <p><strong>定理 2.48</strong> (同构). <em><span
 class="math inline">\(N_i\lhd G\)</span>且</em></p>
 <ol type="1">
@@ -501,8 +390,6 @@ N_j\rangle}_{j\neq i} = {\langle e\rangle}\)</span>, 则<span
 class="math inline">\(G\simeq \prod^w N\)</span>, 称为<span
 class="math inline">\(N_i\)</span>的内弱直积.</em></p></li>
 </ol>
-</div>
-<div class="thm">
 <p><strong>定理 2.49</strong> (元素形态). <em><span
 class="math inline">\(N_i\)</span>是<span
 class="math inline">\(G\)</span>中一族正规子群, 则<span
@@ -511,62 +398,44 @@ class="math inline">\(\iff (\forall g\in G)\ g =
 \prod_in_{a_i}\)</span>, <span
 class="math inline">\(a_i\)</span>为集合<span class="math inline">\(I =
 {1, \ldots n}\)</span>的重排.</em></p>
-</div>
 <h4 id="自由群">自由群</h4>
 <h3 id="其它性质">其它性质</h3>
 <h4 id="计数">计数</h4>
 <p>以下认为<span class="math inline">\(G\)</span>为群, <span
 class="math inline">\(K, H\)</span>为<span
 class="math inline">\(G\)</span>子群.</p>
-<div class="deff">
 <p><strong>定义 2.50</strong> (阶). <em>群<span
 class="math inline">\(G\)</span>的阶数<span
 class="math inline">\(|G|\)</span>为集合<span
 class="math inline">\(G\)</span>的势.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 2.51</strong> (元素的阶). <em><span
 class="math inline">\(a \in G\)</span>, <span
 class="math inline">\(a\)</span>的阶<span
 class="math inline">\(|a|\)</span>为群<span
 class="math inline">\({\langle a\rangle}\)</span>的阶.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 2.52</strong> (指数). <em>子群<span
 class="math inline">\(H\)</span>在群<span
 class="math inline">\(G\)</span>中的指数<span class="math inline">\(|G :
 H|\)</span>为代表元系的势.</em></p>
-</div>
-<div class="cor">
 <p><strong>推论 2.53</strong> (有限阶). <em>群<span
 class="math inline">\(G\)</span>阶有限时有其子群有限阶, 且商集合<span
 class="math inline">\(G / H\)</span>势有限, 其势为<span
 class="math inline">\(|G : H|\)</span>.</em></p>
-</div>
 <h5 id="与同构定理的对应">与同构定理的对应</h5>
 <p>同构定理要求的正规性全部可以利用指数去除. 以下认为<span
 class="math inline">\(K, H &lt; G\)</span>为群,
 证明完全是写开利用陪集等势验证.</p>
-<div class="thm">
 <p><strong>定理 2.54</strong> (第二同阶定理). <em>在<span
 class="math inline">\(|H|, |K| &lt; +\infty\)</span>时, <span
 class="math inline">\(|H||K| / |H\cap K| = |HK|\)</span>.</em></p>
-</div>
-<div class="cor">
 <p><strong>推论 2.55</strong> (与生成的组合). <em><span
 class="math inline">\(K, H\)</span>有限阶则<span
 class="math inline">\(KH\)</span>为有限阶.</em></p>
-</div>
-<div class="thm">
 <p><strong>定理 2.56</strong> (第二同阶定理'). <em><span
 class="math inline">\(|H : H\cap K| = |HK : K|\)</span>.</em></p>
-</div>
-<div class="cor">
 <p><strong>推论 2.57</strong>. <em><span class="math inline">\(|H :
 H\cap K| \leq |G : K| \land\)</span>等号在<span class="math inline">\(|G
 : K| &lt;+\infty\land G \equiv HK\)</span>时取得.</em></p>
-</div>
-<div class="proof">
 <p><em>Proof.</em> 考虑陪集<span class="math inline">\(H : H\cap
 K\)</span>与<span class="math inline">\(G : K\)</span>, 构造映射<span
 class="math inline">\(f : H : H\cap K \rightarrow G : K : h(H\cap
@@ -575,62 +444,42 @@ class="math inline">\(f\)</span>为单射. 从而<span
 class="math inline">\(|H : H\cap K| \leq |G : K|\)</span>.</p>
 <p>若有限情况取等, 则有<span class="math inline">\(f\)</span>为满射,
 则<span class="math inline">\(G = KH\)</span>. ◻</p>
-</div>
-<div class="thm">
 <p><strong>定理 2.58</strong> (拉格朗日-第三同阶定理). <em><span
 class="math inline">\(K &lt; H\)</span> <span class="math inline">\(|G :
 H||H : K| = |G : K|\)</span>.</em></p>
-</div>
-<div class="cor">
 <p><strong>推论 2.59</strong>. <em>元素的阶是群阶的因数, 即<span
 class="math inline">\(|a| \mid |G|\)</span>.</em></p>
-</div>
-<div class="cor">
 <p><strong>推论 2.60</strong>. <em><span class="math inline">\(H,
 K\)</span>指数有限, <span class="math inline">\(|G : H\cap K| \leq |G :
 H||H : K|\)</span>, 等号在<span class="math inline">\(G =
 HK\)</span>时取得.</em></p>
-</div>
 <h4 id="特殊群类">特殊群类</h4>
 <h5 id="循环群">循环群</h5>
-<div class="deff">
 <p><strong>定义 2.61</strong>. <em>形如<span
 class="math inline">\({\langle x\rangle}\)</span>的群<span
 class="math inline">\(Q\)</span>被称为循环群, <span
 class="math inline">\(x\)</span>为群<span
 class="math inline">\(Q\)</span>的生成元.</em></p>
-</div>
-<div class="prop">
 <p><strong>命题 2.62</strong> (刻画). <em>循环群<span
 class="math inline">\(Q\)</span>同构于群<span
 class="math inline">\(\mathbb{Z}/ |x|\mathbb{Z}\)</span>.</em></p>
-</div>
-<div class="prop">
 <p><strong>命题 2.63</strong>. <em>循环群的同态像(特别的,
 子群)为循环群.</em></p>
-</div>
-<div class="prop">
 <p><strong>命题 2.64</strong> (循环群的直积). <em><span
 class="math inline">\(G = {\langle g\rangle} \land H = {\langle
 h\rangle} \implies(\forall x\in G\times H)\ |x| \mid
 \operatorname{l.c.m.}(|g|, |h|)\)</span></em></p>
-</div>
 <h5 id="对称群">对称群</h5>
-<div class="deff">
 <p><strong>定义 2.65</strong>. <em>两两不同的<span
 class="math inline">\(n\)</span>元有序数组全体的集合为一个<span
 class="math inline">\(n\)</span>元对称群.</em></p>
-</div>
 <h2 id="环">环</h2>
 <h3 id="基本定义-2">基本定义</h3>
 <h4 id="环-1">环</h4>
-<div class="deff">
 <p><strong>定义 3.1</strong> (环). <em>Abel群<span
 class="math inline">\((R, +)\)</span>与群上同态<span
 class="math inline">\(\cdot : R\times R \rightarrow
 R\)</span>称为环.</em></p>
-</div>
-<div class="remark">
 <p><strong>注记 3.1</strong>.</p>
 <ol type="1">
 <li><p><em>若<span class="math inline">\(\cdot\)</span>交换(是对称映射),
@@ -638,60 +487,40 @@ R\)</span>称为环.</em></p>
 <li><p><em>若<span class="math inline">\(R\)</span>中存在乘法单位元<span
 class="math inline">\(1\)</span>, 则称为含幺环.</em></p></li>
 </ol>
-</div>
-<div class="deff">
 <p><strong>定义 3.2</strong> (零因子). <em><span
 class="math inline">\(x\in R^* :=\)</span>左零因子<span
 class="math inline">\(\iff (\exists t\in R^*)\ tx = 0\)</span>.</em></p>
-</div>
-<div class="remark">
 <p><strong>注记 3.2</strong>. <em>同样定义右零因子, 零因子等.
 若环无零因子, 则为无零因子环. 若无零因子环为Abel环, 则为整环.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 3.3</strong> (可逆元). <em><span
 class="math inline">\(x\in R :=\)</span>左可逆元<span
 class="math inline">\(\iff (\exists t\in R)\ tx = e\)</span>.</em></p>
-</div>
-<div class="remark">
 <p><strong>注记 3.3</strong>. <em>同样定义右可逆元, 可逆元等.
 记可逆元集合为<span class="math inline">\(R^\times\)</span>. 若<span
 class="math inline">\(R^\times = R^*\)</span>, 则为体(除环).
 若体为Abel环, 则为域. 此时<span class="math inline">\((R^*,
 \cdot)\)</span>显然构成Abel群.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 3.4</strong> (环直积). <em><span
 class="math inline">\(R, S\)</span>群, 称<span
 class="math inline">\(R\times S\)</span>为群直积, 即其为群<span
 class="math inline">\(R\oplus S\)</span>与运算<span
 class="math inline">\(((x, a), (y, b)) \mapsto (xy,
 ab)\)</span>.</em></p>
-</div>
 <h4 id="子环">子环</h4>
-<div class="deff">
 <p><strong>定义 3.5</strong> (子环). <em>子群<span
 class="math inline">\(S &lt; R\)</span>且对<span
 class="math inline">\(R\)</span>中乘法封闭, 则为子环, 记为<span
 class="math inline">\(S &lt; R\)</span>. <span
 class="math inline">\(R\)</span>为<span
 class="math inline">\(S\)</span>的扩环.</em></p>
-</div>
 <p>以下<span class="math inline">\(R, S\)</span>为<span
 class="math inline">\(T\)</span>的子环.</p>
-<div class="deff">
 <p><strong>定义 3.6</strong> (加法). <em><span class="math inline">\(R +
 S := \{r + s \mid r\in R\land s\in S\}\)</span>.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 3.7</strong> (元素与子环的加法). <em><span
 class="math inline">\(r + S := \{r + s\mid s\in S\}\)</span>.</em></p>
-</div>
-<div class="prop">
 <p><strong>命题 3.8</strong> (子环的交). <em>子环的交仍是子环.</em></p>
-</div>
 <h5 id="生成的子环">生成的子环</h5>
-<div class="deff">
 <p><strong>定义 3.9</strong> (生成的子环). <em><span
 class="math inline">\(X \subset R\)</span>, 称子环<span
 class="math inline">\(S\)</span>为<span
@@ -701,27 +530,17 @@ class="math inline">\(S\)</span>是包含<span
 class="math inline">\(X\)</span>的(关于<span
 class="math inline">\(\subset\)</span>序的)最小子环, 换言之<span
 class="math inline">\(S = \bigcap_{K &lt; R} K\)</span>.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 3.10</strong> (乘法). <em><span class="math inline">\(RS
 :={\langle\{rs\mid r\in R \land s\in S\}\rangle}\)</span>.</em></p>
-</div>
 <h4 id="商环">商环</h4>
 <h5 id="理想">理想</h5>
 <p>陪集与群类似.</p>
-<div class="deff">
 <p><strong>定义 3.11</strong> (理想). <em><span class="math inline">\(I
 \lhd R \iff I &lt; R \land (\forall r\in R)\ rI \subset
 I\)</span></em></p>
-</div>
-<div class="prop">
 <p><strong>命题 3.12</strong> (交). <em>理想的交仍为理想.</em></p>
-</div>
-<div class="prop">
 <p><strong>命题 3.13</strong>. <em>理想的和仍然是理想.</em></p>
-</div>
 <h5 id="生成的理想">生成的理想</h5>
-<div class="deff">
 <p><strong>定义 3.14</strong> (生成的理想). <em><span
 class="math inline">\(X \subset R\)</span>, 称理想<span
 class="math inline">\(I\)</span>为<span
@@ -731,30 +550,22 @@ class="math inline">\(S\)</span>是包含<span
 class="math inline">\(X\)</span>的(关于<span
 class="math inline">\(\subset\)</span>序的)最小理想, 换言之<span
 class="math inline">\(S = \bigcap_{K \lhd R} K\)</span>.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 3.15</strong> (理想的积). <em><span
 class="math inline">\(IJ := ((\{ij\mid i\in I\land j\in
 J\}))\)</span>.</em></p>
-</div>
-<div class="deff">
 <p><strong>定义 3.16</strong> (主理想). <em>单元素集合<span
 class="math inline">\(\{a\}\)</span>的生成理想<span
 class="math inline">\(((\{a\}))\)</span>为<span
 class="math inline">\(a\)</span>生成的主理想<span
 class="math inline">\(((a))\)</span>.</em></p>
-</div>
 <p>以下为集合与集合的积<span class="math inline">\(AB := \{ab\mid a\in
 A\land b\in B\}\)</span>, <span class="math inline">\({\langle
 AB\rangle}\)</span>为<span
 class="math inline">\(AB\)</span>中元素的(线性)组合.</p>
-<div class="prop">
 <p><strong>命题 3.17</strong> (生成理想的结构). <em><span
 class="math inline">\(((X)) = {\langle\mathbb{Z}X\rangle} + {\langle
 RX\rangle} + {\langle XR\rangle} + {\langle
 RXR\rangle}\)</span>.</em></p>
-</div>
-<div class="cor">
 <p><strong>推论 3.18</strong>.</p>
 <ol type="1">
 <li><p><em>含幺 : <span class="math inline">\(((X)) = {\langle
@@ -763,8 +574,6 @@ RXR\rangle}\)</span>.</em></p></li>
 {\langle\mathbb{Z}X\rangle} + {\langle
 RX\rangle}\)</span>.</em></p></li>
 </ol>
-</div>
-<div class="cor">
 <p><strong>推论 3.19</strong> (主理想).</p>
 <ol type="1">
 <li><p><em>含幺 : <span class="math inline">\(((a)) = {\langle
@@ -775,23 +584,17 @@ aR\rangle}\)</span>.</em></p></li>
 <li><p><em>含幺交换环 : <span class="math inline">\(((a)) = {\langle
 aR\rangle} = aR\)</span>.</em></p></li>
 </ol>
-</div>
 <h5 id="商环-1">商环</h5>
-<div class="deff">
 <p><strong>定义 3.20</strong>. <em><span class="math inline">\(I \lhd
 R\)</span>, 商群<span class="math inline">\(R / I\)</span>与乘法<span
 class="math inline">\(\cdot : (r + I, s + I) \mapsto (rs +
 I)\)</span>构成环, 称为商环.</em></p>
-</div>
 <h4 id="同构-1">同构</h4>
-<div class="deff">
 <p><strong>定义 3.21</strong> (同构). <em>群上同态<span
 class="math inline">\(f : R \rightarrow S\)</span>并且保持乘法,
 则为同构.</em></p>
-</div>
 <p>核与像类似群中定义. 同样的, 核为理想, 像为子环.</p>
 <h5 id="同构定理-1">同构定理</h5>
-<div class="prop">
 <p><strong>命题 3.22</strong> (正则射影与嵌入映射). <em><span
 class="math inline">\(I \lhd R, S &lt; R\)</span></em></p>
 <ol type="1">
@@ -800,19 +603,13 @@ class="math inline">\(I \lhd R, S &lt; R\)</span></em></p>
 <li><p><em><span class="math inline">\(i : S \rightarrow R : x \mapsto
 x\)</span>.</em></p></li>
 </ol>
-</div>
-<div class="cor">
 <p><strong>推论 3.23</strong>. <em><span class="math inline">\(S
 \rightarrow S + I / I\)</span>存在自然的满同态<span
 class="math inline">\(f = \pi\circ i\)</span>, <span
 class="math inline">\(\ker f = S\cap I\)</span>.</em></p>
-</div>
-<div class="prop">
 <p><strong>命题 3.24</strong>. <em><span class="math inline">\(K \lhd R
 \land K &lt; \ker f \implies(\exists! \bar f)\ \bar f\circ\pi =
 f\)</span>即</em></p>
-</div>
-<div class="thm">
 <p><strong>定理 3.25</strong> (第一同构定理).</p>
 <ol type="1">
 <li><p><em><span class="math inline">\(R / \ker f \simeq
@@ -821,20 +618,14 @@ f\)</span>即</em></p>
 <li><p><em><span class="math inline">\(f\implies(\exists! \bar f)\
 i\circ\bar f\circ\pi = f\)</span></em></p></li>
 </ol>
-</div>
-<div class="thm">
 <p><strong>定理 3.26</strong> (第二同构定理). <em><span
 class="math inline">\(I &lt; S \land I \lhd G \implies S/(S\cap I)
 \simeq (S + I) / I\)</span>.</em></p>
-</div>
-<div class="thm">
 <p><strong>定理 3.27</strong> (第三同构定理). <em><span
 class="math inline">\(J &lt; I \land J, I \lhd R \implies(G / J) / (I /
 J) \simeq R / I\)</span></em></p>
-</div>
 <h3 id="其他性质">其他性质</h3>
 <h4 id="素理想与极大理想">素理想与极大理想</h4>
-<div class="deff">
 <p><strong>定义 3.28</strong> (素理想). <em><span
 class="math inline">\(P\lhd_pR\)</span>, 当且仅当满足</em></p>
 <ol type="1">
@@ -843,20 +634,14 @@ class="math inline">\(P\lhd_pR\)</span>, 当且仅当满足</em></p>
 <li><p><em><span class="math inline">\((\forall A, B\lhd R)\ AB \subset
 P \implies A\subset P\lor B\subset P\)</span></em></p></li>
 </ol>
-</div>
-<div class="prop">
 <p><strong>命题 3.29</strong> (元素刻画). <em><span
 class="math inline">\(P\lhd R\)</span>时, <span
 class="math inline">\(((\forall a, b \in R)\ ab\in P\implies a\in P\lor
 b\in P) \implies P\lhd_pR\)</span>, 在交换条件下, 有两者等价.</em></p>
-</div>
-<div class="remark">
 <p><strong>注记 3.4</strong>. <em>很显然, 在非交换条件下, <span
 class="math inline">\(ab \in P\)</span>比<span class="math inline">\(AB
 \subset P\)</span>是一个更强的条件, 由于<span class="math inline">\(AB
 \subset A \cap B\)</span></em></p>
-</div>
-<div class="proof">
 <p><em>Proof.</em> <span class="math inline">\(AB \subset P \land A \not
 &lt; P \implies(\forall a\in A\backslash P)\ aB \subset AB \subset P
 \implies(\forall a\in A\backslash P, b\in B)\ ab \in P \implies b\in P
@@ -865,8 +650,6 @@ class="math inline">\(ab \in P\)</span>比<span class="math inline">\(AB
 class="math inline">\(((a))((b))\subset((ab))\)</span>, 而显然<span
 class="math inline">\(ab\in R\implies((ab))\subset
 R\implies((a))((b))\subset R\implies a\in R \lor b\in R\)</span>. ◻</p>
-</div>
-<div class="deff">
 <p><strong>定义 3.30</strong> (极大理想). <em><span
 class="math inline">\(M \lhd_mR\)</span>, 当且仅当满足</em></p>
 <ol type="1">
@@ -875,20 +658,12 @@ class="math inline">\(M \lhd_mR\)</span>, 当且仅当满足</em></p>
 <li><p><em><span class="math inline">\((\forall N \lhd R\land N \neq R)\
 M &lt; N \implies M \equiv N\)</span>.</em></p></li>
 </ol>
-</div>
-<div class="thm">
 <p><strong>定理 3.31</strong>. <em>非零含幺环必有极大理想.
 每一个理想都包含在一个极大理想之中.</em></p>
-</div>
-<div class="proof">
 <p><em>Proof.</em> Zorn引理. ◻</p>
-</div>
-<div class="prop">
 <p><strong>命题 3.32</strong>. <em>交换幺环(<span
 class="math inline">\(R ^ 2 = R\)</span>)时,
 有极大理想均是素理想.</em></p>
-</div>
-<div class="proof">
 <p><em>Proof.</em> <span class="math inline">\(M\lhd_mR \land ab\in M
 \land a, b \not\in M \implies M + ((a)), M + ((b)) \neq M\)</span>,
 从而<span class="math inline">\(M + ((a)) = M + ((b)) = R\)</span>.
@@ -896,9 +671,7 @@ class="math inline">\(R ^ 2 = R\)</span>)时,
 + ((a)))(M + ((b))) = R\)</span>, 又由于在交换环中<span
 class="math inline">\(((a))((b))\subset((ab)) \subset M\)</span>,
 从而<span class="math inline">\(M = R\)</span>, 矛盾. ◻</p>
-</div>
 <h5 id="商环刻画">商环刻画</h5>
-<div class="prop">
 <p><strong>命题 3.33</strong>. <em>在含幺交换环<span
 class="math inline">\(R\)</span>中</em></p>
 <ol type="1">
@@ -910,11 +683,7 @@ M\)</span>是域.</em></p></li>
 class="math inline">\(R / M\)</span>是体<span
 class="math inline">\(\implies M\lhd_mR\)</span>.</em></p></li>
 </ol>
-</div>
-<div class="proof">
 <p><em>Proof.</em> ◻</p>
-</div>
-<div class="cor">
 <p><strong>推论 3.34</strong>. <em><span
 class="math inline">\(R\)</span>含幺交换非零环, 以下等价</em></p>
 <ol type="1">
@@ -924,18 +693,12 @@ class="math inline">\(0\)</span>是极大理想.</em></p></li>
 <li><p><em><span class="math inline">\(f: R \rightarrow
 S\)</span>是单同态.</em></p></li>
 </ol>
-</div>
 <h4 id="直积">直积</h4>
-<div class="deff">
 <p><strong>定义 3.35</strong>. <em>直积定义类似群中直积.</em></p>
-</div>
 <h5 id="中国剩余定理">中国剩余定理</h5>
-<div class="lm">
 <p><strong>引理 3.36</strong>. <em><span class="math inline">\(A,
 B\)</span>交换环, <span class="math inline">\(A\times
 B\)</span>交换环.</em></p>
-</div>
-<div class="thm">
 <p><strong>定理 3.37</strong> (中国剩余定理). <em><span
 class="math inline">\(n_i\in \mathbb{N}, n_i \geq 2\)</span>两两互素,
 <span class="math inline">\(n = \prod_{i}n_i\)</span>.</em></p>
@@ -945,8 +708,6 @@ class="math inline">\(n_i\in \mathbb{N}, n_i \geq 2\)</span>两两互素,
 class="math inline">\(\Psi:
 \mathbb{Z}/n\mathbb{Z}\rightarrow\mathbb{Z}/n_1\mathbb{Z}\times \dots
 \times \mathbb{Z}/n_r\mathbb{Z}\)</span>.</em></p>
-</div>
-<div class="proof">
 <p><em>Proof.</em></p>
 <ol type="1">
 <li><p><span class="math inline">\(\Phi\)</span>环同态.</p></li>
@@ -961,11 +722,8 @@ class="math inline">\((a_i)_i\)</span>, 其原像<span
 class="math inline">\(a = \sum_i a_i\beta_iN_i\)</span>.</p></li>
 </ol>
 <p> ◻</p>
-</div>
-<div class="example">
 <p><strong>例 3.1</strong>. <em><span
 style="color: red"></span></em></p>
-</div>
 
       
     </div>
@@ -973,13 +731,22 @@ style="color: red"></span></em></p>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E4%BB%A3%E6%95%B0/" rel="tag">代数</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4/" rel="tag">向量空间</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E5%9F%9F/" rel="tag">域</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E7%8E%AF/" rel="tag">环</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/%E7%BE%A4/" rel="tag">群</a></li></ul>
 
     </footer>
   </div>
   
     
 <nav id="article-nav">
+  
+    <a href="../../11/6531/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          欲求, 知晓与因果
+        
+      </div>
+    </a>
   
   
     <a href="../../../01/22/Grammaire/" id="article-nav-older" class="article-nav-link-wrap">
@@ -1008,6 +775,10 @@ style="color: red"></span></em></p>
       <ul>
         
           <li>
+            <a href="../../11/6531/">欲求, 知晓与因果</a>
+          </li>
+        
+          <li>
             <a href="">代数1</a>
           </li>
         
@@ -1016,7 +787,7 @@ style="color: red"></span></em></p>
           </li>
         
           <li>
-            <a href="../../../01/12/6500/">微分学与求导运算</a>
+            <a href="../../../01/12/6500/">导数与微分</a>
           </li>
         
       </ul>
@@ -1028,7 +799,7 @@ style="color: red"></span></em></p>
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/">数学</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%B3%95%E8%AF%AD/">法语</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/">数学</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/">抽象代数</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/">生活</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E5%93%B2%E5%AD%A6/">哲学</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E5%93%B2%E5%AD%A6/%E7%9F%A5%E8%AF%86-%E5%9B%A0%E6%9E%9C%E7%90%86%E8%AE%BA/">知识-因果理论</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E8%AF%AD%E8%A8%80/">语言</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E8%AF%AD%E8%A8%80/%E6%B3%95%E8%AF%AD/">法语</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E8%AF%AD%E8%A8%80/%E6%B3%95%E8%AF%AD/%E8%AF%AD%E6%B3%95/">语法</a><span class="category-list-count">1</span></li></ul></li></ul></li></ul>
     </div>
   </div>
 
@@ -1038,7 +809,7 @@ style="color: red"></span></em></p>
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="../../../../tags/%E4%BB%A3%E6%95%B0/" style="font-size: 10px;">代数</a> <a href="../../../../tags/%E5%BE%AE%E5%88%86%E5%AD%A6/" style="font-size: 10px;">微分学</a> <a href="../../../../tags/%E8%AF%AD%E6%B3%95/" style="font-size: 10px;">语法</a>
+      <a href="../../../../tags/%E5%85%AC%E7%90%86%E5%8C%96/" style="font-size: 10px;">公理化</a> <a href="../../../../tags/%E5%8F%82%E8%80%83/" style="font-size: 20px;">参考</a> <a href="../../../../tags/%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4/" style="font-size: 10px;">向量空间</a> <a href="../../../../tags/%E5%9B%A0%E6%9E%9C/" style="font-size: 10px;">因果</a> <a href="../../../../tags/%E5%9F%9F/" style="font-size: 10px;">域</a> <a href="../../../../tags/%E5%AF%BC%E6%95%B0/" style="font-size: 10px;">导数</a> <a href="../../../../tags/%E5%BE%AE%E5%88%86/" style="font-size: 10px;">微分</a> <a href="../../../../tags/%E5%BE%AE%E5%88%86%E7%AE%97%E5%AD%90/" style="font-size: 10px;">微分算子</a> <a href="../../../../tags/%E6%97%B6%E6%80%81/" style="font-size: 10px;">时态</a> <a href="../../../../tags/%E7%8E%AF/" style="font-size: 10px;">环</a> <a href="../../../../tags/%E7%AC%94%E8%AE%B0/" style="font-size: 20px;">笔记</a> <a href="../../../../tags/%E7%BE%A4/" style="font-size: 10px;">群</a> <a href="../../../../tags/%E9%9A%90%E5%87%BD%E6%95%B0%E5%AE%9A%E7%90%86/" style="font-size: 10px;">隐函数定理</a>
     </div>
   </div>
 
