@@ -78,113 +78,38 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <h2 id="热力学量的引入">热力学量的引入</h2>
-<p>物理学中的不加定义的语言应当是能够被测量的物理量, 换句话说,
-如果给出了一个量的测量条件, 我们就`定义'了这个量.</p>
+<p>物理学中的不加定义的语言应当是能够被测量的物理量, 换句话说, 如果给出了一个量的测量条件, 我们就`定义’了这个量.</p>
 <h3 id="势函数的引入与热力学公理">势函数的引入与热力学公理</h3>
-<p>在物理中, 我们说在某种角度下, 两个物体存在对称性,
-就是说在这种角度下无法区分这两个物体. 换言之,
-这两个物体从这种角度来说是等价的. 显然,
-这件事就是数学层面的等价关系的描述. 因此,
-我们认为可以构造一个这些物体的总共的集合(我们认为物理学讨论的东西足够的`小',
-以至于不是类)关于这种等价关系的商集,
-使得其中的每一个元素对应着原来的一类无法区分的东西. 这件事显然是可行的,
-下面举例说明.</p>
-<p><strong>例</strong>. 我们给出一个具有中心旋转对称性的空间<span
-class="math inline">\(\mathbb R^3\)</span>, 我们可以认为存在其商集<span
-class="math inline">\(\mathbb R^3/\sim = \mathbb R_{\geq
-0}\)</span>使得其中的元素<span class="math inline">\(\bar
-x\)</span>都对应着原空间关于旋转对称的一类元素<span
-class="math inline">\((x\cos s\cos t, x\sin s\cos t, x\sin
-t)\)</span>.</p>
-<p>对于热力学也是类似的. 我们给出一个热力学平衡系统时,
-我们就是在模糊地说一种对称性: 比如我们不管用什么颜色的气缸. 显然,
-我们认为这样的对称也能够引起一个等价关系和商集,
-我们不妨称它为<strong>势函数</strong>, 记作<span
-class="math inline">\(A\)</span>, 我们认为具有相同的<span
-class="math inline">\(A\)</span>的两个热力学平衡系统是无法分辨的.
-我们将这种对称性的选择称为<strong>热力学公理</strong>.</p>
-<p>那么<span class="math inline">\(A\)</span>究竟是什么东西呢?
-存在什么样的结构呢? 这对于不一样的对称性存在不一样的解答,
-比如我们认为的气体是固定的, 那么<span
-class="math inline">\(A\)</span>与气体是什么毫无关系;
-如果气体含有磁化的可能, 那么<span
-class="math inline">\(A\)</span>还会和磁化有关. 我们称和<span
-class="math inline">\(A\)</span>有关的量是<strong>热学量</strong>.
-我们现在做以下的规定: 为了和大多数的热力学教材匹配, 我们认为<span
-class="math inline">\(A\)</span>仅仅是<span class="math inline">\(p,
-V\)</span>和物体材质有关的量(其中的<span class="math inline">\(p,
-V\)</span>是我们在现实生活中可以确定的量, 因此在此处不需要定义;
-而材质目前未能准确的说明是什么东西). 换言之,
-我们选取的对称性仅仅精确到<span class="math inline">\(p,
-V\)</span>和物体材质, 再往上的东西我们就不清楚了.</p>
+<p>在物理中, 我们说在某种角度下, 两个物体存在对称性, 就是说在这种角度下无法区分这两个物体. 换言之, 这两个物体从这种角度来说是等价的. 显然, 这件事就是数学层面的等价关系的描述. 因此, 我们认为可以构造一个这些物体的总共的集合(我们认为物理学讨论的东西足够的`小’, 以至于不是类)关于这种等价关系的商集, 使得其中的每一个元素对应着原来的一类无法区分的东西. 这件事显然是可行的, 下面举例说明.</p>
+<p><strong>例</strong>. 我们给出一个具有中心旋转对称性的空间<span class="markdown-them-math-inline">$\mathbb R^3$</span>, 我们可以认为存在其商集<span class="markdown-them-math-inline">$\mathbb R^3/\sim = \mathbb R_{\geq 0}$</span>使得其中的元素<span class="markdown-them-math-inline">$\bar x$</span>都对应着原空间关于旋转对称的一类元素<span class="markdown-them-math-inline">$(x\cos s\cos t, x\sin s\cos t, x\sin t)$</span>.</p>
+<p>对于热力学也是类似的. 我们给出一个热力学平衡系统时, 我们就是在模糊地说一种对称性: 比如我们不管用什么颜色的气缸. 显然, 我们认为这样的对称也能够引起一个等价关系和商集, 我们不妨称它为<strong>势函数</strong>, 记作<span class="markdown-them-math-inline">$A$</span>, 我们认为具有相同的<span class="markdown-them-math-inline">$A$</span>的两个热力学平衡系统是无法分辨的. 我们将这种对称性的选择称为<strong>热力学公理</strong>.</p>
+<p>那么<span class="markdown-them-math-inline">$A$</span>究竟是什么东西呢? 存在什么样的结构呢? 这对于不一样的对称性存在不一样的解答, 比如我们认为的气体是固定的, 那么<span class="markdown-them-math-inline">$A$</span>与气体是什么毫无关系; 如果气体含有磁化的可能, 那么<span class="markdown-them-math-inline">$A$</span>还会和磁化有关. 我们称和<span class="markdown-them-math-inline">$A$</span>有关的量是<strong>热学量</strong>.</p>
+<p><strong>定理</strong>(势函数存在). 存在一个热力学势函数<span class="markdown-them-math-inline">$A$</span>, 能够唯一确定一个热力学系统.</p>
+<p>我们现在做以下的规定: 为了和大多数的热力学教材匹配, 我们认为<span class="markdown-them-math-inline">$A$</span>仅仅是<span class="markdown-them-math-inline">$p, V$</span>和物体材质有关的量(其中的<span class="markdown-them-math-inline">$p, V$</span>是我们在现实生活中可以确定的量, 因此在此处不需要定义; 而材质目前未能准确的说明是什么东西). 换言之, 我们选取的对称性仅仅精确到<span class="markdown-them-math-inline">$p, V$</span>和物体材质, 再往上的东西我们就不清楚了.</p>
+<p><strong>定理</strong>(势函数是<span class="markdown-them-math-inline">$p, V$</span>的函数). <span class="markdown-them-math-inline">$\mathrm dA(p, V) = \partial_p A\ \mathrm dp + \partial_V A\ \mathrm dV$</span>.</p>
+<p><strong>注记</strong> 如果我们确定了<span class="markdown-them-math-inline">$\partial_p A$</span>和<span class="markdown-them-math-inline">$\partial_V A$</span>随<span class="markdown-them-math-inline">$p, V$</span>的变化, 我们就能够通过解微分方程的方式确定<span class="markdown-them-math-inline">$A$</span>的结构.</p>
 <h3 id="温度与热力学第零公理">温度与热力学第零公理</h3>
-<p>热力学第零公理给出了一个等价关系: <strong>热平衡</strong>.
-根据上述结论, 它必然也能够引出一个势函数<span
-class="math inline">\(T\)</span>, 由于它是对热力学系统的进一步细化,
-我们因此发现<span class="math inline">\(T\)</span>必然之多只是<span
-class="math inline">\(p, V\)</span>和材质的函数.
-由于公理中没有和材质有关的任何话, 那么<span
-class="math inline">\(T\)</span>和材质因此无关. 在实际生活中,
-我们发现可以通过水银等温度计`测出'<span
-class="math inline">\(T\)</span>, 因此<span
-class="math inline">\(T\)</span>也可以看成是现实生活中可以确定的量.</p>
-<p>由于<span class="math inline">\(T\)</span>的可测性, 我们可以选择<span
-class="math inline">\(p, T\)</span>或<span class="math inline">\(V,
-T\)</span>和材质试图表征一个态函数<span
-class="math inline">\(A\)</span>, 这种表征不一定是完备的,
-因为我们不清楚<span class="math inline">\(T(p,
-V)\)</span>是否存在反函数<span class="math inline">\(p = p(T,
-V)\)</span>. 因此我们很想实际确定<span class="math inline">\(T, p,
-V\)</span>和材质四者的关系, 最好能够把材质直接去除. 根据实验,
-我们发现<span class="math inline">\(T, p, V\)</span>三者构成类似<span
-class="math inline">\(pV/T=\mathbf C\)</span>的形式, 但是会存在一些波动.
-因此我们考虑直接将态函数<span
-class="math inline">\(A\)</span>对应的对称性减弱到能够唯一确定<span
-class="math inline">\(T, p, V\)</span>三者关系的角度. 在以后的讨论中,
-我们默认讨论的材质已知.</p>
-<h3 id="功-热与热力学第一公理">功, 热与热力学第一公理</h3>
-<p>现在我们考虑势函数<span class="math inline">\(A\)</span>的变化,
-这件事是必须的, 因为变化能够产生热力学对称性角度下的"过程".
-我们知道状态的变化必然对应一个差值<span class="math inline">\(O := A_1 -
-A_2\)</span>, 热力学第一公理就是为了讨论<span
-class="math inline">\(O\)</span>产生的. 接下来我们开始讨论<span
-class="math inline">\(O\)</span>的结构.</p>
-<p>我们采用微分形式的语言进行讨论, 目的是给出<span
-class="math inline">\(A\)</span>在每个时态的良定义,
-因此我们默认在准静态过程中讨论上述问题.</p>
-<p>首先, 我们知道<span class="math inline">\(p,
-V\)</span>两者都是力学量,
-他们构成了力学中的一个过程量<strong>功</strong><span
-class="math inline">\(\delta W := p\ \mathrm dV\)</span>, (当然,
-这也是一个热学量). 那么<span
-class="math inline">\(O\)</span>中肯定包含与这一项成正比的存在,
-不妨就认为比例是<span class="math inline">\(1\)</span>.
-我们将差值定义为<span class="math inline">\(\delta Q := \mathrm dA -
-\delta W\)</span>, 称为微<strong>热</strong>.
-热力学第一公理告诉我们<span class="math inline">\(\delta Q\neq
-0\)</span>. 从而说明了热力学并不是无耗散力学的一个子集.</p>
-<p>于是我们获得了第一条热力学的方程: <span class="math inline">\(\delta
-Q := \mathrm dA - \delta W\)</span>(热力学第一定理).</p>
-<p>这件事的理解是这样的: 在我们选择的气缸是完全绝热的时候,
-显然此时的热力学是无耗散力学的一部分, 这没有讨论的必要.
-现实中我们的气缸都是不绝热的, 因此热力学并不包含于无耗散力学.</p>
+<p><strong>公理</strong>(第零公理). 存在一个热平衡态函数<span class="markdown-them-math-inline">$T$</span>, 能够唯一确定达成热平衡的热力学系统.</p>
+<p>热力学第零公理给出了一个等价关系: <strong>热平衡</strong>. 根据上述结论, 它必然也能够引出一个势函数<span class="markdown-them-math-inline">$T$</span>, 由于它是对热力学系统的进一步细化, 我们因此发现<span class="markdown-them-math-inline">$T$</span>必然之多只是<span class="markdown-them-math-inline">$p, V$</span>和材质的函数. 由于公理中没有和材质有关的任何话, 那么<span class="markdown-them-math-inline">$T$</span>和材质因此无关. 因此在实际生活中, 我们发现可以通过水银等温度计`测出’<span class="markdown-them-math-inline">$T$</span>, 因此<span class="markdown-them-math-inline">$T$</span>也可以看成是现实生活中可以确定的量, 这就是说.</p>
+<p><strong>定理</strong>(温度确定). 温度是一个能够测出的量.</p>
+<p>由于<span class="markdown-them-math-inline">$T$</span>的可测性, 我们可以选择<span class="markdown-them-math-inline">$p, T$</span>或<span class="markdown-them-math-inline">$V, T$</span>和材质试图表征一个态函数<span class="markdown-them-math-inline">$A$</span>, 这种表征不一定是完备的, 因为我们不清楚<span class="markdown-them-math-inline">$T(p, V)$</span>是否存在反函数<span class="markdown-them-math-inline">$p = p(T, V)$</span>. 因此我们很想实际确定<span class="markdown-them-math-inline">$T, p, V$</span>和材质四者的关系, 最好能够把材质直接去除. 根据实验, 我们发现<span class="markdown-them-math-inline">$T, p, V$</span>三者构成类似<span class="markdown-them-math-inline">$pV/T=\mathbf C$</span>的形式, 但是会存在一些波动. 因此这样我们就确定了第一个对材质的限制, 我们称之为<strong>物态方程</strong>.</p>
+<p><strong>定理</strong>(物态方程). 通过实验可以确定<strong>物态方程</strong>, 即<span class="markdown-them-math-inline">$T(p, V)$</span>函数.</p>
+<h3 id="功,-热与热力学第一公理">功, 热与热力学第一公理</h3>
+<p><strong>公理</strong>(热力学第一公理). 在准静态变化下, <span class="markdown-them-math-inline">$\delta W$</span>是势函数变化的一部分.</p>
+<p>现在我们考虑势函数<span class="markdown-them-math-inline">$A$</span>的变化, 这件事是必须的, 因为变化能够产生热力学对称性角度下的&quot;过程&quot;. 我们知道状态的变化必然对应一个差值<span class="markdown-them-math-inline">$O := A_1 - A_2$</span>, 热力学第一公理就是为了讨论<span class="markdown-them-math-inline">$O$</span>产生的. 接下来我们开始讨论<span class="markdown-them-math-inline">$O$</span>的结构.</p>
+<p>我们采用微分形式的语言进行讨论, 目的是给出<span class="markdown-them-math-inline">$A$</span>在每个时态的良定义, 因此我们需要在准静态过程中讨论上述问题.</p>
+<p>首先, 我们知道<span class="markdown-them-math-inline">$p, V$</span>两者都是力学量, 共同构成了力学中的一个过程量<strong>功</strong><span class="markdown-them-math-inline">$\delta W := p\ \mathrm dV$</span>, (当然, 这也是一个热学量). 由于热力学第一公理, <span class="markdown-them-math-inline">$O$</span>中包含与这一项成比例的存在, 不妨就认为比例是<span class="markdown-them-math-inline">$-1$</span>. 我们将差值定义为<span class="markdown-them-math-inline">$\delta Q := \mathrm dA - (-\delta W) = \mathrm dA + \delta W$</span>, 称为微<strong>热</strong>, 即是.</p>
+<p><strong>定义</strong>(热). <span class="markdown-them-math-inline">$\delta Q := \mathrm dA + \delta W$</span>.</p>
+<p>自然的:</p>
+<p><strong>定理</strong>(热力学第一定理). 在准静态条件下, <span class="markdown-them-math-inline">$\delta Q = \mathrm dA + \delta W$</span>.</p>
+<p><strong>定义</strong>(热容). 我们称<span class="markdown-them-math-inline">$C_m := \lim_{\mathrm dT\rightarrow 0} \left(\dfrac{\delta Q}{\mathrm d T}\right)_m$</span>为在<span class="markdown-them-math-inline">$m$</span>条件下的热容. 同样的, 我们定义等温, 等压热容.</p>
+<p><strong>命题</strong> 在准静态条件下, <span class="markdown-them-math-inline">$C_V = \partial_V A$</span>.</p>
 <h3 id="熵与热力学第二公理">熵与热力学第二公理</h3>
-<p>我们此时考虑热的相关性质. 根据热力学第二公理,
-若我们做了一个准静态变化, 那么<span class="math inline">\(\delta Q = T\
-\mathrm d S\)</span>. 即<span class="math inline">\(\dfrac{\delta
-Q}{T}\)</span>是一个势函数<span class="math inline">\(S\)</span>,
-这个条件是如此的强: 我们直接称其为一个<strong>势函数</strong>.
-因此完全有可能换掉原来的势函数<span
-class="math inline">\(A\)</span>来表达一些命题,
-这就是麦克斯韦对偶关系想表达的东西.</p>
-<p>我们通过这条定律改写热力学第一定理, 我们有<span
-class="math inline">\(T\ \mathrm dS = \ \mathrm dA - \delta W = \
-\mathrm dA -p\ \mathrm dV\)</span>.
-这就是在准静态条件下的热力学第一定理, 我们称为热力学基本定理.</p>
-<p>显然, 我们可以进行一些奇怪的新的势函数的定义,
-给出完全不同的基本定理的表述.</p>
-<h3 id="态函数a的表达形式">态函数<span
-class="math inline">\(A\)</span>的表达形式</h3>
+<p>我们此时考虑热的相关性质. 根据热力学第二公理, 若我们做了一个可逆过程, 那么<span class="markdown-them-math-inline">$\delta Q = T\ \mathrm d S$</span>. 即<span class="markdown-them-math-inline">$\dfrac{\delta Q}{T}$</span>是一个势函数<span class="markdown-them-math-inline">$S$</span>, 这个条件是如此的强: 我们直接称其为一个<strong>势函数</strong>. 因此完全有可能换掉原来的势函数<span class="markdown-them-math-inline">$A$</span>来表达一些命题, 这就是麦克斯韦对偶关系想表达的东西.</p>
+<p>这件事的理解是这样的: 在我们选择的气缸是完全绝热的时候, 显然此时的热力学是无耗散力学的一部分, 这没有讨论的必要. 现实中我们的气缸都是不绝热的, 因此热力学并不包含于无耗散力学.</p>
+<p>我们通过这条定律改写热力学第一定理, 我们有<span class="markdown-them-math-inline">$T\ \mathrm dS = \ \mathrm dA + \delta W = \ \mathrm dA + p\ \mathrm dV$</span>. 这就是在可逆与准静态条件下的热力学第一定理, 我们称为<strong>热力学基本定理</strong>.</p>
+<p>显然, 我们可以进行一些奇怪的新的势函数的定义, 给出完全不同的基本定理的表述.</p>
+<h3 id="态函数$a$的表达形式">态函数<span class="markdown-them-math-inline">$A$</span>的表达形式</h3>
 
       
     </div>
@@ -194,49 +119,6 @@ class="math inline">\(A\)</span>的表达形式</h3>
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/%E5%85%AC%E7%90%86%E5%8C%96/" rel="tag">公理化</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/%E5%8F%82%E8%80%83/" rel="tag">参考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/%E7%83%AD%E5%8A%9B%E5%AD%A6/" rel="tag">热力学</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-6540" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="2023/02/20/6540/" class="article-date">
-  <time class="dt-published" datetime="2023-02-20T13:50:49.000Z" itemprop="datePublished">2023-02-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="2023/02/20/6540/">6540</a>
-    </h1>
-  
-
-      </header>
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>这是对USTC-CFMAT法语1(2022 秋)的词汇和语法重点的整理.
-        
-          <p class="article-more-link">
-            <a href="2023/02/20/6540/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
     </footer>
   </div>
   
@@ -272,7 +154,7 @@ class="math inline">\(A\)</span>的表达形式</h3>
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>这是对USTC-CFMAT法语1(2022 秋)的词汇和语法重点的整理.
+        <p>这是对USTC-CFMAT法语1(2022 秋)的词汇和语法重点的整理.</p>
         
           <p class="article-more-link">
             <a href="2023/02/17/6537/#more">Read More</a>
@@ -321,8 +203,7 @@ class="math inline">\(A\)</span>的表达形式</h3>
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>研究表明, 作为人类的我们并不具有能够获取一切快乐的能力.
-在某时某刻我们必须选择某一条看起来快乐的途径. 我们认为欲要获得</p>
+        <p>研究表明, 作为人类的我们并不具有能够获取一切快乐的能力. 在某时某刻我们必须选择某一条看起来快乐的途径. 我们认为欲要获得</p>
 
       
     </div>
@@ -416,7 +297,7 @@ class="math inline">\(A\)</span>的表达形式</h3>
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        这是2022秋期末考试的相关安排.
+        <p>这是2022秋期末考试的相关安排.</p>
         
           <p class="article-more-link">
             <a href="2023/02/12/65322/#more">Read More</a>
@@ -465,7 +346,7 @@ class="math inline">\(A\)</span>的表达形式</h3>
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>这是2023春课程安排.
+        <p>这是2023春课程安排.</p>
         
           <p class="article-more-link">
             <a href="2023/02/12/6532/#more">Read More</a>
@@ -514,8 +395,7 @@ class="math inline">\(A\)</span>的表达形式</h3>
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>这是对目前知识-因果哲学体系的一个总结,
-显然其中具有许多不完备的地方需要日后修补.
+        <p>这是对目前知识-因果哲学体系的一个总结, 显然其中具有许多不完备的地方需要日后修补.</p>
         
           <p class="article-more-link">
             <a href="2023/02/11/6531/#more">Read More</a>
@@ -564,7 +444,7 @@ class="math inline">\(A\)</span>的表达形式</h3>
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>这是对USTC-CFMAT代数1(2022 秋)的总结整理.
+        <p>这是对USTC-CFMAT代数1(2022 秋)的总结整理.</p>
         
           <p class="article-more-link">
             <a href="2023/02/10/algebra1/#more">Read More</a>
@@ -613,7 +493,7 @@ class="math inline">\(A\)</span>的表达形式</h3>
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>这是对法语A1A2部分语法的整理.
+        <p>这是对法语A1A2部分语法的整理.</p>
         
           <p class="article-more-link">
             <a href="2023/01/22/Grammaire/#more">Read More</a>
@@ -635,12 +515,57 @@ class="math inline">\(A\)</span>的表达形式</h3>
 
 
   
-
-
-  <nav id="page-nav">
+    <article id="post-6500" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="2023/01/12/6500/" class="article-date">
+  <time class="dt-published" datetime="2023-01-12T04:00:23.000Z" itemprop="datePublished">2023-01-12</time>
+</a>
     
-    <span class="page-number current">1</span><a class="page-number" href="page/2/">2</a><a class="extend next" rel="next" href="page/2/">下一页 &raquo;</a>
-  </nav>
+  <div class="article-category">
+    <a class="article-category-link" href="categories/%E6%95%B0%E5%AD%A6/">数学</a>►<a class="article-category-link" href="categories/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a>►<a class="article-category-link" href="categories/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="2023/01/12/6500/">导数与微分</a>
+    </h1>
+  
+
+      </header>
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><strong>R 6500 WH</strong>.<br>
+这是对微分学的求导运算的相关讨论<span class="bd-box"><h-char class="bd bd-beg"><h-inner>。</h-inner></h-char></span></p>
+        
+          <p class="article-more-link">
+            <a href="2023/01/12/6500/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/%E5%8F%82%E8%80%83/" rel="tag">参考</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/%E5%AF%BC%E6%95%B0/" rel="tag">导数</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/%E5%BE%AE%E5%88%86/" rel="tag">微分</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/%E5%BE%AE%E5%88%86%E7%AE%97%E5%AD%90/" rel="tag">微分算子</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/%E9%9A%90%E5%87%BD%E6%95%B0%E5%AE%9A%E7%90%86/" rel="tag">隐函数定理</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
 
 </section>
         
@@ -657,10 +582,6 @@ class="math inline">\(A\)</span>的表达形式</h3>
           </li>
         
           <li>
-            <a href="2023/02/20/6540/">6540</a>
-          </li>
-        
-          <li>
             <a href="2023/02/17/6537/">法语A1.1重点</a>
           </li>
         
@@ -670,6 +591,10 @@ class="math inline">\(A\)</span>的表达形式</h3>
         
           <li>
             <a href="2023/02/14/6534/">哲学随笔</a>
+          </li>
+        
+          <li>
+            <a href="2023/02/12/65322/">2022秋考试安排</a>
           </li>
         
       </ul>
