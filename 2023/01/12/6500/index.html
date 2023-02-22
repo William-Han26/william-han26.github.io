@@ -7,8 +7,7 @@
   <title>导数与微分 | William Han&#39;s Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <meta name="description" content="R 6500 WH.
-这是对微分学的求导运算的相关讨论。">
+  <meta name="description" content="R 6500 WH. 这是对微分学的求导运算的相关讨论。">
   
   
   
@@ -83,76 +82,127 @@
 
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><strong>R 6500 WH</strong>.<br>
-这是对微分学的求导运算的相关讨论<span class="bd-box"><h-char class="bd bd-beg"><h-inner>。</h-inner></h-char></span></p>
-<span id="more"></span>
-<p>这是一个在我看来非常好玩的问题, 也困扰过我一段时间.<br>
+        <p><strong>R 6500 WH</strong>. 这是对微分学的求导运算的相关讨论<span
+class="bd-box"><h-char class="bd bd-beg"><h-inner>。</h-inner></h-char></span>
+<span id="more"></span></p>
+<p>这是一个在我看来非常好玩的问题, 也困扰过我一段时间.
 现在我将学到看到想到的东西记下来, 希望能够帮到大家.</p>
-<p>我们不妨默认大家有一些奇怪的代数基础(知道向量空间所在的范畴, 其上的同态,<br>
-在基上的分解. 行列式的展开运算. 有限维对偶向量空间,<br>
-张量积*)和一些有趣的几何学基础(切向量的定义, 切空间的定义.<br>
-在高维空间(的滤子基)下的极限的定义), 除此之外, 不默认大家有任何内容未知.</p>
-<p>现有<span class="markdown-them-math-inline">$E \subset\mathbb{R}^m, F \subset\mathbb{R}^n$</span>是两个度量<span class="markdown-them-math-inline">$\mathbb{R}$</span>-向量空间<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>的子开空间,<br>
-分别用指标<span class="markdown-them-math-inline">$i, \nu$</span>进行标记.</p>
-<p>定义函数<span class="markdown-them-math-inline">$f\in \mathcal F(E, F) : E \rightarrow F : x \mapsto f(x)$</span>,<br>
-显然有若给出<span class="markdown-them-math-inline">$F$</span>上的一族基, 有<span class="markdown-them-math-inline">$f(x)\equiv f^\nu(x)e_\nu$</span>.</p>
+<p>我们不妨默认大家有一些奇怪的代数基础(知道向量空间所在的范畴,
+其上的同态, 在基上的分解. 行列式的展开运算. 有限维对偶向量空间,
+张量积*)和一些有趣的几何学基础(切向量的定义, 切空间的定义.
+在高维空间(的滤子基)下的极限的定义), 除此之外,
+不默认大家有任何内容未知.</p>
+<p>现有<span class="math inline">\(E \subset\mathbb{R}^m, F
+\subset\mathbb{R}^n\)</span>是两个度量<span
+class="math inline">\(\mathbb{R}\)</span>-向量空间<a href="#fn1"
+class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>的子开空间, 分别用指标<span
+class="math inline">\(i, \nu\)</span>进行标记.</p>
+<p>定义函数<span class="math inline">\(f\in \mathcal F(E, F) : E
+\rightarrow F : x \mapsto f(x)\)</span>, 显然有若给出<span
+class="math inline">\(F\)</span>上的一族基, 有<span
+class="math inline">\(f(x)\equiv f^\nu(x)e_\nu\)</span>.</p>
 <p><strong>步骤1</strong>, 定义可微函数与增量.</p>
-<p>我们称函数<span class="markdown-them-math-inline">$f$</span>为一个<strong>可微函数</strong>, 当且仅当<br>
-<div class="markdown-them-math-block">$$(\forall x, x_0 \in E) f(x) = f(x_0) + L\mid_{x_0}(x - x_0) + \alpha(x - x_0)$$</div><br>
-其中<span class="markdown-them-math-inline">$L\mid_{x_0}\in \mathcal L(\mathbb{R}^m, \mathbb{R}^n) = \mathcal L(T_{x_0}\mathbb{R}^m, T_{f(x_0)} \mathbb{R}^n)$</span>是一个<strong>线性映射</strong>.<br>
-而<span class="markdown-them-math-inline">$\alpha \in \mathcal F(\mathbb{R}^m, \mathbb{R}^n)$</span>在<span class="markdown-them-math-inline">$x$</span>趋向于<span class="markdown-them-math-inline">$x_0$</span>时表现为关于<span class="markdown-them-math-inline">$x - x_0$</span>的高阶小量,<br>
-即<span class="markdown-them-math-inline">$o(x - x_0)$</span>.</p>
-<p>我们记<span class="markdown-them-math-inline">$\Delta f := f(x) - f(x_0), \Delta x := x - x_0$</span>,<br>
-称为<span class="markdown-them-math-inline">$f$</span>和<span class="markdown-them-math-inline">$x$</span>在<span class="markdown-them-math-inline">$x_0$</span>处的<strong>增量</strong>, 则<br>
-<div class="markdown-them-math-block">$$(\forall x, x_0 \in E) \Delta f\mid_{(x, x_0)} = L\mid_{x_0}(\Delta x\mid_{(x, x_0)}) + \alpha(\Delta x\mid_{(x, x_0)})$$</div><br>
-显然有<span class="markdown-them-math-inline">$\Delta f \in T_{f(x_0)}\mathbb{R}^n, \Delta x \in T_{x_0}\mathbb{R}^m$</span>.</p>
+<p>我们称函数<span
+class="math inline">\(f\)</span>为一个<strong>可微函数</strong>,
+当且仅当 <span class="math display">\[(\forall x, x_0 \in E) f(x) =
+f(x_0) + L\mid_{x_0}(x - x_0) + \alpha(x - x_0)\]</span> 其中<span
+class="math inline">\(L\mid_{x_0}\in \mathcal L(\mathbb{R}^m,
+\mathbb{R}^n) = \mathcal L(T_{x_0}\mathbb{R}^m, T_{f(x_0)}
+\mathbb{R}^n)\)</span>是一个<strong>线性映射</strong>. 而<span
+class="math inline">\(\alpha \in \mathcal F(\mathbb{R}^m,
+\mathbb{R}^n)\)</span>在<span
+class="math inline">\(x\)</span>趋向于<span
+class="math inline">\(x_0\)</span>时表现为关于<span
+class="math inline">\(x - x_0\)</span>的高阶小量, 即<span
+class="math inline">\(o(x - x_0)\)</span>.</p>
+<p>我们记<span class="math inline">\(\Delta f := f(x) - f(x_0), \Delta x
+:= x - x_0\)</span>, 称为<span class="math inline">\(f\)</span>和<span
+class="math inline">\(x\)</span>在<span
+class="math inline">\(x_0\)</span>处的<strong>增量</strong>, 则 <span
+class="math display">\[(\forall x, x_0 \in E) \Delta f\mid_{(x, x_0)} =
+L\mid_{x_0}(\Delta x\mid_{(x, x_0)}) + \alpha(\Delta x\mid_{(x,
+x_0)})\]</span> 显然有<span class="math inline">\(\Delta f \in
+T_{f(x_0)}\mathbb{R}^n, \Delta x \in T_{x_0}\mathbb{R}^m\)</span>.</p>
 <p><strong>步骤2</strong>, 定义切映射(导映射, 微分)与导函数.</p>
-<p>我们称<span class="markdown-them-math-inline">$L\mid_{x_0}$</span>为函数<span class="markdown-them-math-inline">$f$</span>在<span class="markdown-them-math-inline">$x_0$</span>处的<strong>切映射(导映射, 微分)</strong>,<br>
-它将在<span class="markdown-them-math-inline">$T_{x_0}\mathbb{R}^m$</span>这个切空间内的切向量映成<span class="markdown-them-math-inline">$T_{f(x_0)} \mathbb{R}^n$</span>内的切向量,<br>
-记作<span class="markdown-them-math-inline">$Df\mid_{x_0}$</span>. 注意, 这是一个线性映射.<br>
-这个映射可以看成是原函数<span class="markdown-them-math-inline">$f$</span>在<span class="markdown-them-math-inline">$x_0$</span>处的最好线性拟合<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>.<br>
-一个在有限维向量空间范畴上定义的线性函数可以通过在基<span class="markdown-them-math-inline">$\mathcal{B}$</span>上的分解来研究,<br>
-即 <div class="markdown-them-math-block">$$L \equiv L^\nu_i e^i\otimes e_\nu$$</div><br>
-由于<span class="markdown-them-math-inline">$\mathcal{L}(E, F)$</span>构成<span class="markdown-them-math-inline">$\mathbb{R}-$</span>向量空间,<br>
-其同构于<span class="markdown-them-math-inline">$E \otimes F^*$</span>,<br>
-其中的元素<span class="markdown-them-math-inline">$L$</span>即是一个双重线性形式<span class="markdown-them-math-inline">$L \in \hom(E\times \hom(F, \mathbb{R}), \mathbb{R}) : (x, y^*)\mapsto L(x, y^*) := L^\nu_i e^i(x)y^*(e_\nu) =^\star L^\nu_i x^iy^*_\nu$</span>,<br>
-<span class="markdown-them-math-inline">$\star$</span>步需要我们亲爱的正交基底.</p>
-<p>按照上面的说法,<br>
-我们能够将其写成矩阵<span class="markdown-them-math-inline">$[L]_{\mathcal{B}} := (L^\nu_i)_{\nu, i}$</span>的形式.<br>
-这是映射的雅可比矩阵, 我们记这个矩阵为<span class="markdown-them-math-inline">$f'(x_0)$</span>,<br>
-称为<span class="markdown-them-math-inline">$f$</span>在<span class="markdown-them-math-inline">$x_0$</span>处的<strong>导数</strong>.</p>
-<p>由于我们发现, 上文中一直在回避<span class="markdown-them-math-inline">$x_0$</span>的变化, 现在我们开始讨论<span class="markdown-them-math-inline">$x_0$</span>的作用.<br>
-若<span class="markdown-them-math-inline">$x_0$</span>发生变动, 我们有切映射和导数都发生变动, 主要考察导数,<br>
-我们发现此时的&quot;导数&quot;可以看成是一个函数带入固定的<span class="markdown-them-math-inline">$x_0$</span>的值后的矩阵,<br>
-因此定义<strong>导函数</strong><span class="markdown-them-math-inline">$f' : E \rightarrow M(m, n) : x \rightarrow f'(x)$</span>.</p>
+<p>我们称<span class="math inline">\(L\mid_{x_0}\)</span>为函数<span
+class="math inline">\(f\)</span>在<span
+class="math inline">\(x_0\)</span>处的<strong>切映射(导映射,
+微分)</strong>, 它将在<span
+class="math inline">\(T_{x_0}\mathbb{R}^m\)</span>这个切空间内的切向量映成<span
+class="math inline">\(T_{f(x_0)} \mathbb{R}^n\)</span>内的切向量,
+记作<span class="math inline">\(Df\mid_{x_0}\)</span>. 注意,
+这是一个线性映射. 这个映射可以看成是原函数<span
+class="math inline">\(f\)</span>在<span
+class="math inline">\(x_0\)</span>处的最好线性拟合<a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.
+一个在有限维向量空间范畴上定义的线性函数可以通过在基<span
+class="math inline">\(\mathcal{B}\)</span>上的分解来研究, 即 <span
+class="math display">\[L \equiv L^\nu_i e^i\otimes e_\nu\]</span>
+由于<span class="math inline">\(\mathcal{L}(E, F)\)</span>构成<span
+class="math inline">\(\mathbb{R}-\)</span>向量空间, 其同构于<span
+class="math inline">\(E \otimes F^*\)</span>, 其中的元素<span
+class="math inline">\(L\)</span>即是一个双重线性形式<span
+class="math inline">\(L \in \hom(E\times \hom(F, \mathbb{R}),
+\mathbb{R}) : (x, y^*)\mapsto L(x, y^*) := L^\nu_i e^i(x)y^*(e_\nu)
+=^\star L^\nu_i x^iy^*_\nu\)</span>, <span
+class="math inline">\(\star\)</span>步需要我们亲爱的正交基底.</p>
+<p>按照上面的说法, 我们能够将其写成矩阵<span
+class="math inline">\([L]_{\mathcal{B}} := (L^\nu_i)_{\nu,
+i}\)</span>的形式. 这是映射的雅可比矩阵, 我们记这个矩阵为<span
+class="math inline">\(f&#39;(x_0)\)</span>, 称为<span
+class="math inline">\(f\)</span>在<span
+class="math inline">\(x_0\)</span>处的<strong>导数</strong>.</p>
+<p>由于我们发现, 上文中一直在回避<span
+class="math inline">\(x_0\)</span>的变化, 现在我们开始讨论<span
+class="math inline">\(x_0\)</span>的作用. 若<span
+class="math inline">\(x_0\)</span>发生变动,
+我们有切映射和导数都发生变动, 主要考察导数,
+我们发现此时的"导数"可以看成是一个函数带入固定的<span
+class="math inline">\(x_0\)</span>的值后的矩阵,
+因此定义<strong>导函数</strong><span class="math inline">\(f&#39; : E
+\rightarrow M(m, n) : x \rightarrow f&#39;(x)\)</span>.</p>
 <p><strong>步骤3</strong>, 定义偏导数, 复合函数的导数, 反函数的导数.</p>
-<p>实际上, 我们发现存在另一种方式可以很好的求出 <span class="markdown-them-math-inline">$Df^\nu_i\mid_{x_0}$</span>, 即<br>
-<div class="markdown-them-math-block">$$\partial_i f^\nu\mid_{x_0} := Df^\nu_i\mid_{x_0} := {\lim\limits_{h\rightarrow 0}} \dfrac{f^\nu(x_0 + he_i) - f^\nu(x_0)}{h}$$</div><br>
-这是由于将基选定后我们能够非常平凡地计算除法, 贯彻这种思想,<br>
-我们定义<strong>偏导数</strong><span class="markdown-them-math-inline">$\partial_if^\nu\mid_{x_0} := Df\mid_{x_0}(e_i\otimes e^\nu)$</span>,<br>
-有<span class="markdown-them-math-inline">$Df\mid_{x_0} = \partial_if^\nu e^i\otimes e_\nu$</span>.</p>
+<p>实际上, 我们发现存在另一种方式可以很好的求出 <span
+class="math inline">\(Df^\nu_i\mid_{x_0}\)</span>, 即 <span
+class="math display">\[\partial_i f^\nu\mid_{x_0} := Df^\nu_i\mid_{x_0}
+:= {\lim\limits_{h\rightarrow 0}} \dfrac{f^\nu(x_0 + he_i) -
+f^\nu(x_0)}{h}\]</span> 这是由于将基选定后我们能够非常平凡地计算除法,
+贯彻这种思想, 我们定义<strong>偏导数</strong><span
+class="math inline">\(\partial_if^\nu\mid_{x_0} :=
+Df\mid_{x_0}(e_i\otimes e^\nu)\)</span>, 有<span
+class="math inline">\(Df\mid_{x_0} = \partial_if^\nu e^i\otimes
+e_\nu\)</span>.</p>
 <p><strong>番外1</strong>, 对微分算子的浅层讨论.</p>
-<p>1,<br>
-<strong>微分算子</strong><span class="markdown-them-math-inline">$D\mid_{x_0} \in \mathcal{F}(\mathcal{D}^1(U(x_0), \mathbb{R}^n), \mathbb{R}^m\otimes\mathbb{R}^{n*}) : f\mid_{U(x_0)} \mapsto Df\mid_{x_0}$</span>是一个线性泛函.<br>
-并且满足莱布尼兹率(等价于保持复合运算<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>),<br>
-即如果我们给出了<span class="markdown-them-math-inline">$F$</span>上的内积<span class="markdown-them-math-inline">${\langle x, y\rangle} := g(x, y) := \rho_{\nu\mu} x^\nu y^\mu$</span>,<br>
-即一个双线性形式<span class="markdown-them-math-inline">$\rho \in (F\times F)^*$</span>, 那么<br>
-<div class="markdown-them-math-block">$$D{\langle f, g\rangle} = {\langle f, Dg\rangle} + {\langle Df, g\rangle}$$</div><br>
-其中<span class="markdown-them-math-inline">${\langle f, Dg\rangle} := {\langle f, D_ig\rangle}e^i$</span>.</p>
-<p>分量表达即为<br>
-<div class="markdown-them-math-block">$$D_i{\langle f, g\rangle} = {\langle f, D_i g\rangle} + {\langle D_f, g\rangle}$$</div><br>
+<p>1, <strong>微分算子</strong><span class="math inline">\(D\mid_{x_0}
+\in \mathcal{F}(\mathcal{D}^1(U(x_0), \mathbb{R}^n),
+\mathbb{R}^m\otimes\mathbb{R}^{n*}) : f\mid_{U(x_0)} \mapsto
+Df\mid_{x_0}\)</span>是一个线性泛函.
+并且满足莱布尼兹率(等价于保持复合运算<a href="#fn3" class="footnote-ref"
+id="fnref3" role="doc-noteref"><sup>3</sup></a>), 即如果我们给出了<span
+class="math inline">\(F\)</span>上的内积<span
+class="math inline">\({\langle x, y\rangle} := g(x, y) := \rho_{\nu\mu}
+x^\nu y^\mu\)</span>, 即一个双线性形式<span class="math inline">\(\rho
+\in (F\times F)^*\)</span>, 那么 <span class="math display">\[D{\langle
+f, g\rangle} = {\langle f, Dg\rangle} + {\langle Df, g\rangle}\]</span>
+其中<span class="math inline">\({\langle f, Dg\rangle} := {\langle f,
+D_ig\rangle}e^i\)</span>.</p>
+<p>分量表达即为 <span class="math display">\[D_i{\langle f, g\rangle} =
+{\langle f, D_i g\rangle} + {\langle D_f, g\rangle}\]</span>
 因此微分算子确实不保持内积.</p>
 <p><strong>步骤4</strong>, 隐函数定理, 反函数定理, 微分同胚.</p>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>指的是在向量空间上定义了度量<span class="markdown-them-math-inline">$d : E \times E \rightarrow\mathbb{R}$</span> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn2" class="footnote-item"><p>借由这种思路, 我们得到反函数定理的基本思路, 将非线性变成线性,<br>
-整体退化为局部 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn3" class="footnote-item"><p>R 6473 <a href="#fnref3" class="footnote-backref">↩︎</a></p>
-</li>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>指的是在向量空间上定义了度量<span
+class="math inline">\(d : E \times E \rightarrow\mathbb{R}\)</span><a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>借由这种思路, 我们得到反函数定理的基本思路,
+将非线性变成线性, 整体退化为局部<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>R 6473<a href="#fnref3" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
