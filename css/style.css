@@ -96,7 +96,7 @@ body:after {
 .article-entry dl,
 .widget dl {
   margin: 0 30px;
-  line-height: 1.6em;
+  line-height: 1.8em;
 }
 .article-entry ul ul,
 .widget ul ul,
@@ -159,175 +159,175 @@ body:after {
 @media screen {
   #content,
   .outer {
-    width: 60em;
+    width: 70em;
   }
 }
 @media screen and (max-width: 810px) {
   #content,
   .outer {
-    width: 43em;
+    width: 53em;
   }
 }
 @media screen and (max-width: 790px) {
   #content,
   .outer {
-    width: 42em;
+    width: 52em;
   }
 }
 @media screen and (max-width: 770px) {
   #content,
   .outer {
-    width: 41em;
+    width: 51em;
   }
 }
 @media screen and (max-width: 750px) {
   #content,
   .outer {
-    width: 40em;
+    width: 50em;
   }
 }
 @media screen and (max-width: 730px) {
   #content,
   .outer {
-    width: 39em;
+    width: 49em;
   }
 }
 @media screen and (max-width: 710px) {
   #content,
   .outer {
-    width: 38em;
+    width: 48em;
   }
 }
 @media screen and (max-width: 690px) {
   #content,
   .outer {
-    width: 37em;
+    width: 47em;
   }
 }
 @media screen and (max-width: 670px) {
   #content,
   .outer {
-    width: 36em;
+    width: 46em;
   }
 }
 @media screen and (max-width: 650px) {
   #content,
   .outer {
-    width: 35em;
+    width: 45em;
   }
 }
 @media screen and (max-width: 630px) {
   #content,
   .outer {
-    width: 34em;
+    width: 44em;
   }
 }
 @media screen and (max-width: 610px) {
   #content,
   .outer {
-    width: 33em;
+    width: 43em;
   }
 }
 @media screen and (max-width: 590px) {
   #content,
   .outer {
-    width: 32em;
+    width: 42em;
   }
 }
 @media screen and (max-width: 570px) {
   #content,
   .outer {
-    width: 31em;
+    width: 41em;
   }
 }
 @media screen and (max-width: 550px) {
   #content,
   .outer {
-    width: 30em;
+    width: 40em;
   }
 }
 @media screen and (max-width: 530px) {
   #content,
   .outer {
-    width: 29em;
+    width: 39em;
   }
 }
 @media screen and (max-width: 510px) {
   #content,
   .outer {
-    width: 28em;
+    width: 38em;
   }
 }
 @media screen and (max-width: 490px) {
   #content,
   .outer {
-    width: 27em;
+    width: 37em;
   }
 }
 @media screen and (max-width: 470px) {
   #content,
   .outer {
-    width: 26em;
+    width: 36em;
   }
 }
 @media screen and (max-width: 454px) {
   #content,
   .outer {
-    width: 25em;
+    width: 35em;
   }
 }
 @media screen and (max-width: 438px) {
   #content,
   .outer {
-    width: 24em;
+    width: 34em;
   }
 }
 @media screen and (max-width: 422px) {
   #content,
   .outer {
-    width: 23em;
+    width: 33em;
   }
 }
 @media screen and (max-width: 406px) {
   #content,
   .outer {
-    width: 22em;
+    width: 32em;
   }
 }
 @media screen and (max-width: 390px) {
   #content,
   .outer {
-    width: 21em;
+    width: 31em;
   }
 }
 @media screen and (max-width: 374px) {
   #content,
   .outer {
-    width: 20em;
+    width: 30em;
   }
 }
 @media screen and (max-width: 358px) {
   #content,
   .outer {
-    width: 19em;
+    width: 29em;
   }
 }
 @media screen and (max-width: 342px) {
   #content,
   .outer {
-    width: 18em;
+    width: 28em;
   }
 }
 @media screen and (max-width: 326px) {
   #content,
   .outer {
-    width: 17em;
+    width: 27em;
   }
 }
 @media screen and (max-width: 310px) {
   #content,
   .outer {
-    width: 16em;
+    width: 26em;
   }
 }
 html,
@@ -532,11 +532,14 @@ body,
 }
 body {
   background: #fff;
-  font: 16px "biaodian", "LM-Roman-10", "Chinese", serif, sans-serif;
+  font: 17px "biaodian", "LM-Roman-10", "Chinese", serif, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 #content {
   margin: 0 auto;
+}
+.article-entry p {
+  text-indent: 1em;
 }
 .outer {
   margin: 0 auto;
@@ -552,8 +555,8 @@ body {
 .inner {
   display: inline;
   float: left;
-  width: 95.83333333333334%;
-  margin: 0 2.083333333333333%;
+  width: 96.66666666666667%;
+  margin: 0 1.666666666666667%;
 }
 .left,
 .alignleft {
@@ -603,8 +606,8 @@ body {
   #main {
     display: inline;
     float: left;
-    width: 70.83333333333334%;
-    margin: 0 2.083333333333333%;
+    width: 76.66666666666667%;
+    margin: 0 1.666666666666667%;
   }
 }
 @media screen and (min-width: 811px) {
@@ -732,9 +735,9 @@ a {
 .nav-icon {
   font-family: FontAwesome;
   text-align: center;
-  font-size: 16px;
-  width: 16px;
-  height: 16px;
+  font-size: 17px;
+  width: 17px;
+  height: 17px;
   padding: 20px 15px;
   position: relative;
   cursor: pointer;
@@ -876,7 +879,7 @@ a {
   font-size: 2em;
   font-weight: bold;
   color: #222;
-  line-height: 1.1em;
+  line-height: 1.2em;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
@@ -903,8 +906,8 @@ a.article-title:hover {
 }
 .article-entry p,
 .article-entry table {
-  line-height: 1.6em;
-  margin: 0.8em 0;
+  line-height: 1.8em;
+  margin: 0.9em 0;
 }
 .article-entry h1,
 .article-entry h2,
@@ -913,8 +916,8 @@ a.article-title:hover {
 .article-entry h5,
 .article-entry h6 {
   font-weight: bold;
-  line-height: 1.1em;
-  margin: 1.65em 0 1.1em;
+  line-height: 1.2em;
+  margin: 1.8em 0 1.2em;
 }
 .article-entry a {
   color: #999;
@@ -926,8 +929,8 @@ a.article-title:hover {
 .article-entry ul,
 .article-entry ol,
 .article-entry dl {
-  margin-top: 0.8em;
-  margin-bottom: 0.8em;
+  margin-top: 0.9em;
+  margin-bottom: 0.9em;
   margin-left: 2em;
   margin-right: 2em;
 }
@@ -963,19 +966,17 @@ a.article-title:hover {
 }
 .article-entry blockquote {
   font-family: "biaodian", "LM-Roman-10", "Chinese", serif;
-  margin: 1.6em 0;
+  font-style: italic;
+  margin: 1.8em 0;
   padding: 0px 2em;
-  padding: 0.25em 2em 0.25em calc(2em - 5px);
-  border-left: 5px solid #ddd;
-  background: #f7f7f7;
 }
 .article-entry blockquote strong {
   font-style: normal;
 }
 .article-entry blockquote footer {
-  font-size: 16px;
+  font-size: 17px;
   font-family: font-sans;
-  margin: 0.8em 0;
+  margin: 0.9em 0;
 }
 .article-entry blockquote footer cite:before {
   content: "—";
@@ -1077,8 +1078,8 @@ a.article-title:hover {
 }
 .article-footer {
   font-size: 0.85em;
-  line-height: 1.6em;
-  padding-top: 1.6em;
+  line-height: 1.8em;
+  padding-top: 1.8em;
   margin: 0 15px 15px;
 }
 .article-footer:before,
@@ -1196,7 +1197,7 @@ a.article-title:hover {
 }
 .article-nav-title {
   font-size: 0.85em;
-  line-height: 1.6em;
+  line-height: 1.8em;
   margin-top: 0.5em;
 }
 .article-share-box {
@@ -1386,7 +1387,7 @@ a.article-title:hover {
   text-decoration: none;
   font-weight: bold;
   color: #555;
-  line-height: 1.6em;
+  line-height: 1.8em;
 }
 .archive-article-title:hover {
   color: #999;
@@ -1464,7 +1465,7 @@ a.article-title:hover {
   text-decoration: underline;
 }
 #footer-info {
-  line-height: 1.6em;
+  line-height: 1.8em;
   font-size: 0.85em;
   text-align: center;
 }
@@ -1477,7 +1478,7 @@ a.article-title:hover {
   border-width: 1px;
   overflow: auto;
   color: #4d4d4c;
-  line-height: 25.6px;
+  line-height: 30.6px;
 }
 .article-entry .gist .gist-file .gist-data .line-numbers {
   color: #666;
@@ -1738,7 +1739,7 @@ html {
   list-style: disc;
 }
 .widget {
-  line-height: 1.6em;
+  line-height: 1.8em;
   word-wrap: break-word;
   font-size: 0.9em;
 }
@@ -1751,7 +1752,7 @@ html {
 .widget ol ul,
 .widget ul ol,
 .widget ol ol {
-  margin: 0 20px;
+  margin: 0 1em;
   color: #999;
 }
 .widget ul ul,
@@ -1782,4 +1783,13 @@ html {
 .tagcloud a {
   margin-right: 5px;
   display: inline-block;
+}
+#content blockquote {
+  background: #fbfbfb;
+  text-indent: 0;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  color: #666;
+  line-height: 1.2em !important;
 }
