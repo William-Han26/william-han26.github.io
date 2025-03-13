@@ -7,8 +7,11 @@
   <title>1.1-1.8 | William Han&#39;s Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <meta name="description" content="1.1 Weil and Cartier divisors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
-1.2 Invertible sheaves . . . . . . . . . . . . . . . . . . .">
+  <meta name="description" content="这是 O. Debarre 的 Higher Dimensional Geometry
+及其一份暑校讲义的读书笔记.
+
+要把做数学当成职业.
+">
   
   
   
@@ -60,7 +63,7 @@
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="../../../../categories/%E5%87%A0%E4%BD%95/">几何</a>►<a class="article-category-link" href="../../../../categories/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/">代数几何</a>►<a class="article-category-link" href="../../../../categories/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/Higher-Algebraic-Geometry-O-Debarre/">"Higher Algebraic Geometry, O. Debarre"</a>
+    <a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/">数学</a>►<a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/">几何</a>►<a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/">代数几何</a>►<a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/%E9%AB%98%E7%BB%B4%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/">高维代数几何</a>
   </div>
 
   </div>
@@ -80,48 +83,181 @@
     
 <div id="article-toc">
     <h2 class="widget-title">Table Of Contents</h2>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#11-weil%20/%20cartier%20%E9%99%A4%E5%AD%90"><span class="toc-number">1.</span> <span class="toc-text">1.1 Weil &#x2F; Cartier 除子</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#12-%E5%8F%AF%E9%80%86%E5%B1%82"><span class="toc-number">1.1.</span> <span class="toc-text">1.2 可逆层</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#weil-cartier-%E9%99%A4%E5%AD%90"><span class="toc-number">1.</span> <span class="toc-text">1.1 Weil &#x2F; Cartier 除子</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E9%80%86%E5%B1%82"><span class="toc-number">1.1.</span> <span class="toc-text">1.2 可逆层</span></a></li></ol></li></ol>
 </div>
 
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>1.1 Weil and Cartier divisors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3</p>
-<p>1.2 Invertible sheaves . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5</p>
-<p>1.3 Intersection of curves and divisors . . . . . . . . . . . . . . . . . . . . . . . . 7</p>
-<p>1.4 Line bundles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9</p>
-<p>1.5 Linear systems and morphisms to projective spaces . . . . . . . . . . . . . . 10</p>
-<p>1.6 Globally generated sheaves . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12</p>
-<p>1.7 Ample divisors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13</p>
-<p>1.8 Ample divisors on curves . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17</p>
-<hr>
-<p>这一部分主要是对代数几何初步知识 (Hartshorne 第一二章) 的复习, 扩展了很多 Debarre 书 (Higher Algebraic Geometry) 上的内容.</p>
-<p>我们的概型都是 Noether 且分离 (separated) 的. 后者是因为我们经常希望考虑仿射开集的交, 回忆: <strong>若概型可分离<span class="bd-box"><h-char class="bd bd-beg"><h-inner>，</h-inner></h-char></span>则仿射开集的交还是仿射的 <a target="_blank" rel="noopener" href="https://stacks.math.columbia.edu/tag/01KP">The Stacks project 01KP</a></strong>.</p>
-<hr>
-<h2 id="11-weil / cartier 除子">1.1 Weil / Cartier 除子</h2>
+        <p>这是 O. Debarre 的 Higher Dimensional Geometry
+及其一份暑校讲义的读书笔记.</p>
+<blockquote>
+<p>要把做数学当成职业.</p>
+</blockquote>
+<span id="more"></span>
+<p>1.1 Weil and Cartier divisors . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . 3</p>
+<p>1.2 Invertible sheaves . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . 5</p>
+<p>1.3 Intersection of curves and divisors . . . . . . . . . . . . . . .
+. . . . . . . . . 7</p>
+<p>1.4 Line bundles . . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . . 9</p>
+<p>1.5 Linear systems and morphisms to projective spaces . . . . . . . .
+. . . . . . 10</p>
+<p>1.6 Globally generated sheaves . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . 12</p>
+<p>1.7 Ample divisors . . . . . . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . 13</p>
+<p>1.8 Ample divisors on curves . . . . . . . . . . . . . . . . . . . .
+. . . . . . . . . 17</p>
+<hr />
+<p>这一部分主要是对代数几何初步知识 (Hartshorne 第一二章) 的复习,
+扩展了很多 Debarre 书 (Higher Algebraic Geometry) 上的内容.</p>
+<p>我们的概型都是 Noether 且分离 (separated) 的.
+后者是因为我们经常希望考虑仿射开集的交, 回忆: <strong>若概型可分离<span
+class="bd-box"><h-char class="bd bd-beg"><h-inner>，</h-inner></h-char></span>则仿射开集的交还是仿射的
+<a target="_blank" rel="noopener" href="https://stacks.math.columbia.edu/tag/01KP">The Stacks project
+01KP</a></strong>.</p>
+<hr />
+<h2 id="weil-cartier-除子">1.1 Weil / Cartier 除子</h2>
 <p>我们按照书的写法, 和文件反过来.</p>
-<p>定义 <strong>Cartier 除子</strong>为概型 <span class="markdown-them-math-inline">$X$</span> 的层 <span class="markdown-them-math-inline">$\mathscr{K}^* / \mathscr{O}^*$</span> 的整体截面, 这里的 <span class="markdown-them-math-inline">$\mathscr{K}$</span> 是结构层 <span class="markdown-them-math-inline">$\mathscr{O}$</span> 在仿射开集上在可逆元全体 (群!) <span class="markdown-them-math-inline">$\mathscr{O}^*$</span> 上做局部化的结果, 从而有同态 <span class="markdown-them-math-inline">$\mathscr{O}\to \mathscr{K}^*$</span>.</p>
-<p>这等价于说, 存在开覆盖 <span class="markdown-them-math-inline">$U$</span> 使得截面 <span class="markdown-them-math-inline">$s$</span> 在开集 <span class="markdown-them-math-inline">$U_i$</span> 上可以写作 <span class="markdown-them-math-inline">$f_i\in \mathscr{K}^*$</span>, 并且 <span class="markdown-them-math-inline">$f_i$</span> 之间的转移函数 <span class="markdown-them-math-inline">$g_{ij} \in \mathscr{O}^*\left(U_{ij}\right)$</span>.</p>
-<p>如果 <span class="markdown-them-math-inline">$f_i$</span> 可以整体粘合成 <span class="markdown-them-math-inline">$\mathscr{K}^*$</span> 的整体截面 <span class="markdown-them-math-inline">$f$</span>, 或者说 <span class="markdown-them-math-inline">$g_{ij} \equiv 1$</span>, 那么 <span class="markdown-them-math-inline">$s$</span> 称为<strong>主除子</strong>. 显然这些截面能够做乘法 (群!), 相差一个主除子称为除子的<strong>线性等价</strong>.</p>
-<p>进一步考虑 <span class="markdown-them-math-inline">$f_i$</span> 是否在 <span class="markdown-them-math-inline">$\mathscr{O}$</span> 中. 如果在则皆大欢喜, 这时候除子被称为<strong>有效的</strong> (effective). 值得注意, 有效的主除子就是 <span class="markdown-them-math-inline">$\mathscr{O}$</span> 的整体截面, 这类截面在射影概型上非常少.</p>
-<p>对于有效除子, 由于 <span class="markdown-them-math-inline">$f_i\in \mathscr{O}\left(U_i\right)$</span>, 由于 <span class="markdown-them-math-inline">$U_i$</span> 仿射, 从而可以考虑其零点集 <span class="markdown-them-math-inline">$V\left(f_i\right)$</span>, 它们在 <span class="markdown-them-math-inline">$U_{ij}$</span> 上显然能够粘合 (回忆 <span class="markdown-them-math-inline">$g_{ij}$</span> 可逆, 从而没有零点). 因此能够讨论截面 <span class="markdown-them-math-inline">$s$</span> 对应的子概形 <span class="markdown-them-math-inline">$D_s\subset X$</span>, 这里的子概形不一定既约或不可约.</p>
-<p><strong>例</strong>. 当 <span class="markdown-them-math-inline">$X$</span> 为局部可分解 (locally factorial) 概型时, 它具有非常好的光滑性质. 回忆 <strong>Noether 环 <span class="markdown-them-math-inline">$A$</span> 是 UFD 当且仅当其高度为一的素理想主 <a target="_blank" rel="noopener" href="https://stacks.math.columbia.edu/tag/0AFT">The Stacks project 0AFT</a></strong>. 此时, 所有的超曲面 (整的余一维闭子概形) 都能够局部上看成一个函数的零点集, 从而能够看作一个 Cartier 除子.</p>
-<p>上述观点诱导了下面的定义. 我们假设 <span class="markdown-them-math-inline">$X$</span> 是 regular in codimensional one 的概型 (Hartshorne 语, 即结构层的一维局部环 <span class="markdown-them-math-inline">$\mathscr{O}_{X, x}$</span> 均是正则局部环). 回忆非奇异簇和 Noether 正规 (normal) 概型均是 rico 的. 值得注意, 定义 Cartier 除子时并没有这样的限制.</p>
-<p>定义 <strong>Weil 除子</strong>为超曲面 (称为<strong>主除子</strong>) <span class="markdown-them-math-inline">$D_i$</span> 的 <span class="markdown-them-math-inline">$\mathbb{Z}-$</span>线性组合 <span class="markdown-them-math-inline">$\sum n_i D_i$</span>, 如果 <span class="markdown-them-math-inline">$n_i \geq 0, \forall i$</span>, 那么称其为<strong>有效除子</strong>. 线性等价类似定义.</p>
-<p>我们想构造两种除子的对应. 然而, 在 rico 条件下, 一般给不出 Weil <span class="markdown-them-math-inline">$\to$</span> Cartier 的对应. 但是我们总是有 Cartier <span class="markdown-them-math-inline">$\to$</span> Weil 的对应: 由于 rico, 于是 <span class="markdown-them-math-inline">$\mathscr{O}_{X, x}$</span> 是 DVR, 考虑赋值 <span class="markdown-them-math-inline">$v_x$</span>, 对于一个有理函数 <span class="markdown-them-math-inline">$f\in \mathscr{K} = \operatorname{Frac} \mathscr{O}$</span>, 能够求其在超曲面 <span class="markdown-them-math-inline">$\bar x$</span> 上的赋值 <span class="markdown-them-math-inline">$v_x\left(f\right)$</span>, 则 <span class="markdown-them-math-inline">$D := \sum v_x\left(f\right)\bar x$</span> 即为所求. 在局部可分解的情况下, 这种构造和上面例子的构造互逆, 并且主/有效/线性等价是一致的.</p>
-<p>我们还会定义 <span class="markdown-them-math-inline">$\mathbb Q-$</span>系数的 Weil 除子.</p>
-<hr>
-<p>我们想将除子和 <span class="markdown-them-math-inline">$\mathbb Z$</span> 建立联系. 因此, 需要讨论主除子如何 ‘和谐地’ 对应到 <span class="markdown-them-math-inline">$\mathbb{Z}$</span>.</p>
-<p>对代数闭域上的一维概型 <span class="markdown-them-math-inline">$X$</span>, 所有点都是 ‘同构的’ <em>(这个问题比较敏感. 我们这里的意思是剩余类域的同构. 仔细讨论如下: 首先, <a target="_blank" rel="noopener" href="https://math.stackexchange.com/questions/84504/are-the-local-rings-at-smooth-points-of-an-irreducible-variety-isomorphic">algebraic geometry - Are the local rings at smooth points of an irreducible variety isomorphic? - Mathematics Stack Exchange</a> 告诉我们, 局部环大有可能不是同构的. 其次, Eisenbud 在 GTM 197 P 51 末尾指出, 我们需要考虑完备化. 就像 <a target="_blank" rel="noopener" href="https://mathoverflow.net/questions/191725/completion-of-a-local-ring-of-a-curve">ag.algebraic geometry - Completion of a local ring of a curve - MathOverflow</a> 指出的那样. 这也是平展拓扑的来源.)</em> 因此我们能够直接把 <span class="markdown-them-math-inline">$D_i$</span> 看作 <span class="markdown-them-math-inline">$1$</span>, 对于 Weil 除子定义映射 <span class="markdown-them-math-inline">$\deg \sum n_iD_i \mapsto \sum n_i$</span>, 称为这个除子的 degree.</p>
-<p>如果 <span class="markdown-them-math-inline">$X$</span> 不是定义在代数闭域上的, 那么要将 <span class="markdown-them-math-inline">$1$</span> 换成 <span class="markdown-them-math-inline">$[\kappa(D_i): k]$</span>, 即剩余类域的超越次数. 值得注意, 对于主除子, 这就是映射???的??? [试图类比 ramification index 但是失败.]</p>
-<p>对于射影空间, 由于函数环为 UFD, 所有超曲面都由一个多项式定义, 于是我们能将这个多项式的次数称为这个超曲面 (主除子) 的 degree. 由此生成一个映射 <span class="markdown-them-math-inline">$\deg$</span>.</p>
-<p>更一般的概型上的 <span class="markdown-them-math-inline">$\deg$</span> 一般没有定义.</p>
-<hr>
-<h3 id="12-可逆层">1.2 可逆层</h3>
-<p>除子 (Cartier 除子) 和线丛 (可逆层) 的对应很是经典. 我们只给一个 Sketch: 除子到线丛, 考虑转移函数 <span class="markdown-them-math-inline">$g_{ij}^{-1}$</span> 黏合, 显然这是 <span class="markdown-them-math-inline">$\mathscr K$</span> 的一个子层. 反之, 对于 <span class="markdown-them-math-inline">$\mathscr K$</span> 的子层, 我们可以考虑其在仿射平凡化上的生成元 <span class="markdown-them-math-inline">$f_i^{-1}$</span>. 值得注意, 这里的 ‘<span class="markdown-them-math-inline">$\mathscr K$</span> 的子层’ 是不可去掉的. 当 <span class="markdown-them-math-inline">$X$</span> 整概形时, 一切可逆层都可以嵌到 <span class="markdown-them-math-inline">$\mathscr K$</span> 中 (Hart P 145 Prop 6.15), 从而我们没有后顾之忧.</p>
-<p>类比复流形的情况, 当 <span class="markdown-them-math-inline">$X$</span> 是局部可分解的整概形时, 事情更加美观: 我们只要取可逆层 <span class="markdown-them-math-inline">$\mathscr L$</span> 的整体截面, 考虑其像上述 Cartier <span class="markdown-them-math-inline">$\to$</span> Weil 的对应构造 Weil 除子即可.</p>
-<p>这里的 <span class="markdown-them-math-inline">$f_i^{-1}$</span> 的目的由下述事实解释.</p>
-<p><strong>例</strong>. 考虑射影空间 <span class="markdown-them-math-inline">$\mathbb{P}^n$</span>, 其上的可逆层 <span class="markdown-them-math-inline">$\mathscr{O}(1)$</span> 由函数 <span class="markdown-them-math-inline">$X_i$</span> 定义. 因此其截面为所有线性型 <span class="markdown-them-math-inline">$\sum \lambda_i X_i$</span>, <span class="markdown-them-math-inline">$\mathscr{O}(1)$</span> 同构于某个截面的除子生成的线丛, 不妨取 <span class="markdown-them-math-inline">$X_0$</span> 为这个截面. 那么 <span class="markdown-them-math-inline">$X_i$</span> 对应的除子是 <span class="markdown-them-math-inline">$X_i = 0$</span> 这个超平面 <span class="markdown-them-math-inline">$H_0 \simeq \mathbb{A}^n$</span>. 因此, <span class="markdown-them-math-inline">$\mathscr{O}(1)\cong \mathscr{O}(H_0)$</span>. 巧的是, <span class="markdown-them-math-inline">$\deg H_0 := \deg X_0 = 1$</span>, 这里的 <span class="markdown-them-math-inline">$1$</span> 就是 <span class="markdown-them-math-inline">$\deg H_0$</span>. 因此我们的符号是好的.</p>
-<p>上面的例子诱发了这样一个问题: 在 <span class="markdown-them-math-inline">$\mathbb{P}^n$</span> 中, 是否所有的除子都线性等价于 <span class="markdown-them-math-inline">$nH_0$</span>? 令人满意的是, 是.</p>
+<p>定义 <strong>Cartier 除子</strong>为概型 <span
+class="math inline">\(X\)</span> 的层 <span
+class="math inline">\(\mathscr{K}^* / \mathscr{O}^*\)</span> 的整体截面,
+这里的 <span class="math inline">\(\mathscr{K}\)</span> 是结构层 <span
+class="math inline">\(\mathscr{O}\)</span> 在仿射开集上在可逆元全体
+(群!) <span class="math inline">\(\mathscr{O}^*\)</span>
+上做局部化的结果, 从而有同态 <span class="math inline">\(\mathscr{O}\to
+\mathscr{K}^*\)</span>.</p>
+<p>这等价于说, 存在开覆盖 <span class="math inline">\(U\)</span>
+使得截面 <span class="math inline">\(s\)</span> 在开集 <span
+class="math inline">\(U_i\)</span> 上可以写作 <span
+class="math inline">\(f_i\in \mathscr{K}^*\)</span>, 并且 <span
+class="math inline">\(f_i\)</span> 之间的转移函数 <span
+class="math inline">\(g_{ij} \in
+\mathscr{O}^*\left(U_{ij}\right)\)</span>.</p>
+<p>如果 <span class="math inline">\(f_i\)</span> 可以整体粘合成 <span
+class="math inline">\(\mathscr{K}^*\)</span> 的整体截面 <span
+class="math inline">\(f\)</span>, 或者说 <span
+class="math inline">\(g_{ij} \equiv 1\)</span>, 那么 <span
+class="math inline">\(s\)</span> 称为<strong>主除子</strong>.
+显然这些截面能够做乘法 (群!),
+相差一个主除子称为除子的<strong>线性等价</strong>.</p>
+<p>进一步考虑 <span class="math inline">\(f_i\)</span> 是否在 <span
+class="math inline">\(\mathscr{O}\)</span> 中. 如果在则皆大欢喜,
+这时候除子被称为<strong>有效的</strong> (effective). 值得注意,
+有效的主除子就是 <span class="math inline">\(\mathscr{O}\)</span>
+的整体截面, 这类截面在射影概型上非常少.</p>
+<p>对于有效除子, 由于 <span class="math inline">\(f_i\in
+\mathscr{O}\left(U_i\right)\)</span>, 由于 <span
+class="math inline">\(U_i\)</span> 仿射, 从而可以考虑其零点集 <span
+class="math inline">\(V\left(f_i\right)\)</span>, 它们在 <span
+class="math inline">\(U_{ij}\)</span> 上显然能够粘合 (回忆 <span
+class="math inline">\(g_{ij}\)</span> 可逆, 从而没有零点).
+因此能够讨论截面 <span class="math inline">\(s\)</span> 对应的子概形
+<span class="math inline">\(D_s\subset X\)</span>,
+这里的子概形不一定既约或不可约.</p>
+<p><strong>例</strong>. 当 <span class="math inline">\(X\)</span>
+为局部可分解 (locally factorial) 概型时, 它具有非常好的光滑性质. 回忆
+<strong>Noether 环 <span class="math inline">\(A\)</span> 是 UFD
+当且仅当其高度为一的素理想主 <a
+target="_blank" rel="noopener" href="https://stacks.math.columbia.edu/tag/0AFT">The Stacks project
+0AFT</a></strong>. 此时, 所有的超曲面 (整的余一维闭子概形)
+都能够局部上看成一个函数的零点集, 从而能够看作一个 Cartier 除子.</p>
+<p>上述观点诱导了下面的定义. 我们假设 <span
+class="math inline">\(X\)</span> 是 regular in codimensional one 的概型
+(Hartshorne 语, 即结构层的一维局部环 <span
+class="math inline">\(\mathscr{O}_{X, x}\)</span> 均是正则局部环).
+回忆非奇异簇和 Noether 正规 (normal) 概型均是 rico 的. 值得注意, 定义
+Cartier 除子时并没有这样的限制.</p>
+<p>定义 <strong>Weil 除子</strong>为超曲面 (称为<strong>主除子</strong>)
+<span class="math inline">\(D_i\)</span> 的 <span
+class="math inline">\(\mathbb{Z}-\)</span>线性组合 <span
+class="math inline">\(\sum n_i D_i\)</span>, 如果 <span
+class="math inline">\(n_i \geq 0, \forall i\)</span>,
+那么称其为<strong>有效除子</strong>. 线性等价类似定义.</p>
+<p>我们想构造两种除子的对应. 然而, 在 rico 条件下, 一般给不出 Weil <span
+class="math inline">\(\to\)</span> Cartier 的对应. 但是我们总是有
+Cartier <span class="math inline">\(\to\)</span> Weil 的对应: 由于 rico,
+于是 <span class="math inline">\(\mathscr{O}_{X, x}\)</span> 是 DVR,
+考虑赋值 <span class="math inline">\(v_x\)</span>, 对于一个有理函数
+<span class="math inline">\(f\in \mathscr{K} = \operatorname{Frac}
+\mathscr{O}\)</span>, 能够求其在超曲面 <span class="math inline">\(\bar
+x\)</span> 上的赋值 <span
+class="math inline">\(v_x\left(f\right)\)</span>, 则 <span
+class="math inline">\(D := \sum v_x\left(f\right)\bar x\)</span>
+即为所求. 在局部可分解的情况下, 这种构造和上面例子的构造互逆,
+并且主/有效/线性等价是一致的.</p>
+<p>我们还会定义 <span class="math inline">\(\mathbb Q-\)</span>系数的
+Weil 除子.</p>
+<hr />
+<p>我们想将除子和 <span class="math inline">\(\mathbb Z\)</span>
+建立联系. 因此, 需要讨论主除子如何 '和谐地' 对应到 <span
+class="math inline">\(\mathbb{Z}\)</span>.</p>
+<p>对代数闭域上的一维概型 <span class="math inline">\(X\)</span>,
+所有点都是 '同构的' <em>(这个问题比较敏感.
+我们这里的意思是剩余类域的同构. 仔细讨论如下: 首先, <a
+target="_blank" rel="noopener" href="https://math.stackexchange.com/questions/84504/are-the-local-rings-at-smooth-points-of-an-irreducible-variety-isomorphic">algebraic
+geometry - Are the local rings at smooth points of an irreducible
+variety isomorphic? - Mathematics Stack Exchange</a> 告诉我们,
+局部环大有可能不是同构的. 其次, Eisenbud 在 GTM 197 P 51 末尾指出,
+我们需要考虑完备化. 就像 <a
+target="_blank" rel="noopener" href="https://mathoverflow.net/questions/191725/completion-of-a-local-ring-of-a-curve">ag.algebraic
+geometry - Completion of a local ring of a curve - MathOverflow</a>
+指出的那样. 这也是平展拓扑的来源.)</em> 因此我们能够直接把 <span
+class="math inline">\(D_i\)</span> 看作 <span
+class="math inline">\(1\)</span>, 对于 Weil 除子定义映射 <span
+class="math inline">\(\deg \sum n_iD_i \mapsto \sum n_i\)</span>,
+称为这个除子的 degree.</p>
+<p>如果 <span class="math inline">\(X\)</span> 不是定义在代数闭域上的,
+那么要将 <span class="math inline">\(1\)</span> 换成 <span
+class="math inline">\([\kappa(D_i): k]\)</span>, 即剩余类域的超越次数.
+值得注意, 对于主除子, 这就是映射???的??? [试图类比 ramification index
+但是失败.]</p>
+<p>对于射影空间, 由于函数环为 UFD, 所有超曲面都由一个多项式定义,
+于是我们能将这个多项式的次数称为这个超曲面 (主除子) 的 degree.
+由此生成一个映射 <span class="math inline">\(\deg\)</span>.</p>
+<p>更一般的概型上的 <span class="math inline">\(\deg\)</span>
+一般没有定义.</p>
+<hr />
+<h3 id="可逆层">1.2 可逆层</h3>
+<p>除子 (Cartier 除子) 和线丛 (可逆层) 的对应很是经典. 我们只给一个
+Sketch: 除子到线丛, 考虑转移函数 <span
+class="math inline">\(g_{ij}^{-1}\)</span> 黏合, 显然这是 <span
+class="math inline">\(\mathscr K\)</span> 的一个子层. 反之, 对于 <span
+class="math inline">\(\mathscr K\)</span> 的子层,
+我们可以考虑其在仿射平凡化上的生成元 <span
+class="math inline">\(f_i^{-1}\)</span>. 值得注意, 这里的 '<span
+class="math inline">\(\mathscr K\)</span> 的子层' 是不可去掉的. 当 <span
+class="math inline">\(X\)</span> 整概形时, 一切可逆层都可以嵌到 <span
+class="math inline">\(\mathscr K\)</span> 中 (Hart P 145 Prop 6.15),
+从而我们没有后顾之忧.</p>
+<p>类比复流形的情况, 当 <span class="math inline">\(X\)</span>
+是局部可分解的整概形时, 事情更加美观: 我们只要取可逆层 <span
+class="math inline">\(\mathscr L\)</span> 的整体截面, 考虑其像上述
+Cartier <span class="math inline">\(\to\)</span> Weil 的对应构造 Weil
+除子即可.</p>
+<p>这里的 <span class="math inline">\(f_i^{-1}\)</span>
+的目的由下述事实解释.</p>
+<p><strong>例</strong>. 考虑射影空间 <span
+class="math inline">\(\mathbb{P}^n\)</span>, 其上的可逆层 <span
+class="math inline">\(\mathscr{O}(1)\)</span> 由函数 <span
+class="math inline">\(X_i\)</span> 定义. 因此其截面为所有线性型 <span
+class="math inline">\(\sum \lambda_i X_i\)</span>, <span
+class="math inline">\(\mathscr{O}(1)\)</span>
+同构于某个截面的除子生成的线丛, 不妨取 <span
+class="math inline">\(X_0\)</span> 为这个截面. 那么 <span
+class="math inline">\(X_i\)</span> 对应的除子是 <span
+class="math inline">\(X_i = 0\)</span> 这个超平面 <span
+class="math inline">\(H_0 \simeq \mathbb{A}^n\)</span>. 因此, <span
+class="math inline">\(\mathscr{O}(1)\cong \mathscr{O}(H_0)\)</span>.
+巧的是, <span class="math inline">\(\deg H_0 := \deg X_0 = 1\)</span>,
+这里的 <span class="math inline">\(1\)</span> 就是 <span
+class="math inline">\(\deg H_0\)</span>. 因此我们的符号是好的.</p>
+<p>上面的例子诱发了这样一个问题: 在 <span
+class="math inline">\(\mathbb{P}^n\)</span> 中,
+是否所有的除子都线性等价于 <span class="math inline">\(nH_0\)</span>?
+令人满意的是, 是.</p>
 
       
     </div>
@@ -138,11 +274,11 @@
 <nav id="article-nav">
   
   
-    <a href="../../10/7289%20%E6%88%91%E6%83%B3%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../../../../2024/12/31/7220%202025%EF%BC%8C%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%EF%BC%81/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">
         
-          (no title)
+          2025，新年快乐！
         
       </div>
     </a>
@@ -168,10 +304,6 @@
           </li>
         
           <li>
-            <a href="../../10/7289%20%E6%88%91%E6%83%B3%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF/">(no title)</a>
-          </li>
-        
-          <li>
             <a href="../../../../2024/12/31/7220%202025%EF%BC%8C%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%EF%BC%81/">2025，新年快乐！</a>
           </li>
         
@@ -183,6 +315,10 @@
             <a href="../../../../2024/07/31/7080%20Hodge%20Theory's%20exam/">Hodge Theory&#39;s Exam</a>
           </li>
         
+          <li>
+            <a href="../../../../2024/07/23/7059%20%E6%9A%91%E5%81%87%E8%AE%A1%E5%88%92/">暑假计划</a>
+          </li>
+        
       </ul>
     </div>
   </div>
@@ -192,7 +328,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E5%87%A0%E4%BD%95/">几何</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/">代数几何</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/Higher-Algebraic-Geometry-O-Debarre/">"Higher Algebraic Geometry, O. Debarre"</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/">数学</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0/">同调代数</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/">几何</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/Hodge-Theory/">Hodge Theory</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E9%BB%8E%E6%9B%BC%E5%87%A0%E4%BD%95/">黎曼几何</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/">生活</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%95%B4%E7%90%86/">整理</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%95%B4%E7%90%86/%E6%95%B0%E5%AD%A6%E4%B9%A6%E7%B1%8D/">数学书籍</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%95%B4%E7%90%86/%E6%95%B0%E5%AD%A6%E8%AE%BA%E6%96%87/">数学论文</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/">新年展望</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/2024-%E6%96%B0%E5%B9%B4/">2024 新年</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/2025-%E6%96%B0%E5%B9%B4/">2025 新年</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E8%AE%A1%E5%88%92/">计划</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E8%AE%A1%E5%88%92/2024-%E5%9B%BD%E5%BA%86/">2024 国庆</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E8%AE%A1%E5%88%92/2024-%E5%AF%92%E5%81%87/">2024 寒假</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E8%AE%A1%E5%88%92/2024-%E6%9A%91%E5%81%87/">2024 暑假</a><span class="category-list-count">1</span></li></ul></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/">数学</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0/">同调代数</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/">几何</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/Hodge-Theory/">Hodge Theory</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/">代数几何</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/%E9%AB%98%E7%BB%B4%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95/">高维代数几何</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%87%A0%E4%BD%95/%E9%BB%8E%E6%9B%BC%E5%87%A0%E4%BD%95/">黎曼几何</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/">分析</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E5%88%86%E6%9E%90/%E5%BE%AE%E7%A7%AF%E5%88%86/">微积分</a><span class="category-list-count">1</span></li></ul></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/">生活</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%95%B4%E7%90%86/">整理</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%95%B4%E7%90%86/%E6%95%B0%E5%AD%A6%E4%B9%A6%E7%B1%8D/">数学书籍</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%95%B4%E7%90%86/%E6%95%B0%E5%AD%A6%E8%AE%BA%E6%96%87/">数学论文</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/">新年展望</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/2024-%E6%96%B0%E5%B9%B4/">2024 新年</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E6%96%B0%E5%B9%B4%E5%B1%95%E6%9C%9B/2025-%E6%96%B0%E5%B9%B4/">2025 新年</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E8%AE%A1%E5%88%92/">计划</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E8%AE%A1%E5%88%92/2024-%E5%9B%BD%E5%BA%86/">2024 国庆</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E8%AE%A1%E5%88%92/2024-%E5%AF%92%E5%81%87/">2024 寒假</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="../../../../categories/%E7%94%9F%E6%B4%BB/%E8%AE%A1%E5%88%92/2024-%E6%9A%91%E5%81%87/">2024 暑假</a><span class="category-list-count">1</span></li></ul></li></ul></li></ul>
     </div>
   </div>
 
