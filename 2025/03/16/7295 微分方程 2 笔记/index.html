@@ -7,11 +7,7 @@
   <title>微分方程 2 | William Han&#39;s Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <meta name="description" content="调和函数的船新方法
-Aim: 证明 Harnack 不等式
-Harnack 不等式: \(\sup_{\Omega&amp;#39;} u \leq
-C\inf_{\Omega&amp;#39;} u\) 对于正调和函数 \(u\) 及 \(\Omega&amp;#39; \sqsubset \Omega\).
-">
+  <meta name="description" content="这是 2025 春 麻希南老师 微分方程2的笔记.">
   
   
   
@@ -83,12 +79,15 @@ C\inf_{\Omega&amp;#39;} u\) 对于正调和函数 \(u\) 及 \(\Omega&amp;#39; \s
     
 <div id="article-toc">
     <h2 class="widget-title">Table Of Contents</h2>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E5%92%8C%E5%87%BD%E6%95%B0%E7%9A%84%E8%88%B9%E6%96%B0%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">调和函数的船新方法</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E5%92%8C%E5%87%BD%E6%95%B0%E7%9A%84%E8%88%B9%E6%96%B0%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">调和函数的船新方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#harnack-%E4%B8%8D%E7%AD%89%E5%BC%8F"><span class="toc-number">1.1.</span> <span class="toc-text">Harnack 不等式</span></a></li></ol></li></ol>
 </div>
 
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="调和函数的船新方法">调和函数的船新方法</h2>
+        <p>这是 2025 春 麻希南老师 微分方程2的笔记.</p>
+<span id="more"></span>
+<h2 id="调和函数的船新方法">调和函数的船新方法</h2>
+<h3 id="harnack-不等式">Harnack 不等式</h3>
 <p>Aim: 证明 Harnack 不等式</p>
 <p>Harnack 不等式: <span class="math inline">\(\sup_{\Omega&#39;} u \leq
 C\inf_{\Omega&#39;} u\)</span> 对于正调和函数 <span
@@ -104,12 +103,14 @@ class="math inline">\(\bar\Omega&#39;\)</span> ??)
 <p>只要有 (对数梯度估计) <span class="math inline">\(\sup_{B_{1 / 2}}
 \frac{|\partial u|}{u} \leq C\)</span> 就好, (用 Newton-Leibnitz
 公式).</p>
-<p>怎么从梯度内估计 (P29) 推导对数梯度估计? 丘成桐 1975.</p>
+<p>怎么从梯度内估计 (<span class="math inline">\(\sup_{B_{1 / 2}}
+|\partial u| \leq C_n / R \max_{\bar \Omega} |u|\)</span>)
+推导对数梯度估计? 丘成桐 1975.</p>
 <p><strong>定理 (Yau)</strong>. 若 <span class="math inline">\(u &gt; 0
 \in C^3(\Omega)\)</span> 调和, 且 <span class="math inline">\(B_1
 \sqsubset \Omega\)</span>, 那么 <span class="math inline">\(\sup_{B_{1 /
-2}} |\partial\log u| \leq C_n\)</span>.
-<strong><em>证明</em></strong>.</p>
+2}} |\partial\log u| \leq C_n\)</span>.</p>
+<p><strong><em>证明</em></strong>.</p>
 <p>取 <span class="math inline">\(v = \log u\)</span>, 那么 <span
 class="math inline">\(u = \exp v\)</span>, <span
 class="math inline">\(u_i = \exp v.v_i\)</span>, <span
@@ -185,6 +186,11 @@ n\)</span>.</p>
 <p>于是再用 (1), 得到 <span class="math inline">\(\sup_{B_{1 / 2}}
 \Delta v \leq \frac{16}{9} n (20n + 16)\)</span>.</p>
 <p>定理得证.</p>
+<p><strong><em>注记</em></strong>. 我们此处的思路就是使用不等式把问题往
+<span class="math inline">\(\Delta v\)</span>, 即 <span
+class="math inline">\(Bv\)</span> 方向化简. 再使用约束 (<span
+class="math inline">\(x &lt; 1\)</span> 什么的) 把不重要的量放成 <span
+class="math inline">\(1\)</span>.</p>
 
       
     </div>
