@@ -25,28 +25,27 @@ body:after {
 }
 .article-entry h1,
 .widget h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .article-entry h2,
 .widget h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 .article-entry h3,
 .widget h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 .article-entry h4,
 .widget h4 {
-  font-size: 1.2em;
+  font-size: 1.15em;
 }
 .article-entry h5,
 .widget h5 {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 .article-entry h6,
 .widget h6 {
   font-size: 1em;
-  color: #999;
 }
 .article-entry hr,
 .widget hr {
@@ -95,7 +94,7 @@ body:after {
 .widget ol,
 .article-entry dl,
 .widget dl {
-  margin: 0 30px;
+  margin: 0 20px;
   line-height: 1.8em;
 }
 .article-entry ul ul,
@@ -841,7 +840,7 @@ a {
   color: #777;
 }
 .article {
-  margin: 50px 0;
+  margin: 20px 0;
 }
 .article-inner {
   overflow: hidden;
@@ -872,11 +871,11 @@ a {
   margin: 0 12px 8px;
 }
 .article-header {
-  padding: 15px 0;
+  padding: 10px 0;
 }
 .article-title {
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   color: #222;
   line-height: 1.2em;
@@ -1080,7 +1079,7 @@ a.article-title:hover {
   font-size: 0.85em;
   line-height: 1.8em;
   padding-top: 1.8em;
-  margin: 0 15px 15px;
+  margin: 0 10px 10px;
 }
 .article-footer:before,
 .article-footer:after {
@@ -1135,7 +1134,7 @@ a.article-title:hover {
 }
 @media screen and (min-width: 811px) {
   #article-nav {
-    margin: 50px 0;
+    margin: 20px 0;
   }
   #article-nav:before {
     width: 8px;
@@ -1159,7 +1158,7 @@ a.article-title:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
   display: block;
 }
@@ -1326,7 +1325,7 @@ a.article-title:hover {
   margin: 0 auto;
 }
 .archives-wrap {
-  margin: 50px 0;
+  margin: 20px 0;
 }
 .archives:before,
 .archives:after {
@@ -1403,7 +1402,7 @@ a.article-title:hover {
   display: block;
 }
 #page-nav {
-  margin: 50px auto;
+  margin: 20px auto;
   background: #fff;
   text-align: center;
   color: #999;
@@ -1512,12 +1511,12 @@ a.article-title:hover {
   padding: 15px;
 }
 .article-entry .gist {
-  margin: 0 -15px;
+  margin: 0 -10px;
   border-style: solid;
   border-color: #ddd;
   border-width: 1px 0;
   background: #fff;
-  padding: 15px 15px 15px 0;
+  padding: 15px 10px 15px 0;
 }
 .article-entry .gist .gist-file {
   border: none;
@@ -1548,7 +1547,7 @@ a.article-title:hover {
   text-shadow: 0 0;
   padding: 0;
   margin-top: 1em;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 .article-entry .gist .gist-file .gist-meta a {
   color: #999;
@@ -1659,7 +1658,7 @@ pre .hljs-javascript .hljs-function {
   text-decoration: none;
 }
 #article-toc {
-  margin: 15px;
+  margin: 10px;
   color: #999;
 }
 .toc-child {
@@ -1713,7 +1712,7 @@ html {
   }
 }
 .widget-wrap {
-  margin: 50px 0;
+  margin: 20px 0;
 }
 .widget {
   border: 1px solid #ddd;
