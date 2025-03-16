@@ -4,11 +4,14 @@
   <meta charset="utf-8">
   
   
-  <title>同调代数-模论 | William Han&#39;s Website</title>
+  <title>微分方程 2 | William Han&#39;s Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <meta name="description" content="6789.
-同调代数讨论班第二、三次讨论的我的讲义。">
+  <meta name="description" content="调和函数的船新方法
+Aim: 证明 Harnack 不等式
+Harnack 不等式: \(\sup_{\Omega&amp;#39;} u \leq
+C\inf_{\Omega&amp;#39;} u\) 对于正调和函数 \(u\) 及 \(\Omega&amp;#39; \sqsubset \Omega\).
+">
   
   
   
@@ -53,14 +56,14 @@
 </div>
 
       <div id="content" class="outer">
-        <section id="main"><article id="post-6789 同调代数-模论" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-7295 微分方程 2 笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="" class="article-date">
-  <time class="dt-published" datetime="2023-10-27T13:30:00.000Z" itemprop="datePublished">2023-10-27</time>
+  <time class="dt-published" datetime="2025-03-16T15:02:17.000Z" itemprop="datePublished">2025-03-16</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/">数学</a>►<a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/">代数</a>►<a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0/">同调代数</a>
+    <a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/">数学</a>►<a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E6%96%B9%E7%A8%8B/">方程</a>►<a class="article-category-link" href="../../../../categories/%E6%95%B0%E5%AD%A6/%E6%96%B9%E7%A8%8B/%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B/">偏微分方程</a>
   </div>
 
   </div>
@@ -71,7 +74,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      同调代数-模论
+      微分方程 2
     </h1>
   
 
@@ -80,24 +83,108 @@
     
 <div id="article-toc">
     <h2 class="widget-title">Table Of Contents</h2>
-    
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E5%92%8C%E5%87%BD%E6%95%B0%E7%9A%84%E8%88%B9%E6%96%B0%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">调和函数的船新方法</span></a></li></ol>
 </div>
 
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><strong>6789</strong>.</p>
-<p>同调代数讨论班第二<span
-class="bd-box"><h-char class="bd bd-beg"><h-inner>、</h-inner></h-char></span>三次讨论的我的讲义<span
-class="bd-box"><h-char class="bd bd-beg"><h-inner>。</h-inner></h-char></span>
-<span id="more"></span></p>
-
-
-	<div class="row">
-    <embed src="/pdf/6789 Homological Algebra.pdf" width="100%" height="550" type="application/pdf">
-	</div>
-
-
-
+        <h2 id="调和函数的船新方法">调和函数的船新方法</h2>
+<p>Aim: 证明 Harnack 不等式</p>
+<p>Harnack 不等式: <span class="math inline">\(\sup_{\Omega&#39;} u \leq
+C\inf_{\Omega&#39;} u\)</span> 对于正调和函数 <span
+class="math inline">\(u\)</span> 及 <span
+class="math inline">\(\Omega&#39; \sqsubset \Omega\)</span>.</p>
+<ul>
+<li>传统证明: 积分, 平均值不等式, 对梯度再平均值.</li>
+<li>现在证明 (Nilenberg 等): 用极值原理.</li>
+</ul>
+<p>Slogan: 只要对球做就好. 原因: 由于极大极小值 (能取到! 考虑 <span
+class="math inline">\(\bar\Omega&#39;\)</span> ??)
+之间连线可被球有限覆盖.</p>
+<p>只要有 (对数梯度估计) <span class="math inline">\(\sup_{B_{1 / 2}}
+\frac{|\partial u|}{u} \leq C\)</span> 就好, (用 Newton-Leibnitz
+公式).</p>
+<p>怎么从梯度内估计 (P29) 推导对数梯度估计? 丘成桐 1975.</p>
+<p><strong>定理 (Yau)</strong>. 若 <span class="math inline">\(u &gt; 0
+\in C^3(\Omega)\)</span> 调和, 且 <span class="math inline">\(B_1
+\sqsubset \Omega\)</span>, 那么 <span class="math inline">\(\sup_{B_{1 /
+2}} |\partial\log u| \leq C_n\)</span>.
+<strong><em>证明</em></strong>.</p>
+<p>取 <span class="math inline">\(v = \log u\)</span>, 那么 <span
+class="math inline">\(u = \exp v\)</span>, <span
+class="math inline">\(u_i = \exp v.v_i\)</span>, <span
+class="math inline">\(0 = \Delta u = \exp v (|\partial v|^2 + \Delta
+v)\)</span>, i.e. <span class="math inline">\(\Delta v = - |\partial
+v|^2\)</span> (1).</p>
+<p>取辅助函数 <span class="math inline">\(\varphi = (1 - |x|^2)^2
+|\partial u|^2\)</span>, 由于 <span
+class="math inline">\(\varphi\)</span> 在边界等于 <span
+class="math inline">\(0\)</span>, 且 <span class="math inline">\(\varphi
+\geq 0\)</span>, 那么 <span class="math inline">\(\partial\varphi(x_0) =
+0\)</span> (2), <span class="math inline">\(\Delta \varphi(x_0) \leq
+0\)</span> (3). 通过 (1), (2), (3) 证明要证的 <span
+class="math inline">\(|\partial v| \leq C_n\)</span>.</p>
+<p>取 <span class="math inline">\(\eta := 1 - |x|^2\)</span>, <span
+class="math inline">\(\varphi := \eta^2 |\partial v|^2\)</span>, <span
+class="math inline">\(0 = \varphi_i = 2\eta\eta_i |\partial v|^2 +
+\eta^2 2 |\partial v||\partial v|_i\)</span>, i.e. <span
+class="math inline">\(-2\eta_i|\partial v|^2 = \eta (|\partial
+v|^2)_i\)</span> (2').</p>
+<p>再带入 (3): 即 <span class="math inline">\(0 \geq \Delta \varphi(x_0)
+= \Delta(\eta^2)|\partial v|^2 + 2(\eta^2)_i(|\partial v|^2)_i +
+\eta^2\Delta(|\partial v|^2)\)</span>.</p>
+<ul>
+<li>第一项: 低阶项, 留下.</li>
+<li>第二项: 用 (2') 处理, 如下
+<ul>
+<li><span class="math inline">\(= -8\eta_i\eta_i |\partial
+v|^2\)</span>.</li>
+</ul></li>
+<li>第三项: 希望往 <span class="math inline">\(|\partial v|\)</span>
+方向化简. 具体计算如下
+<ul>
+<li><span class="math inline">\(\Delta(|\partial v|^2) = (v_jv_j)_{ii} =
+2v_{jii}v_j + 2v_{ji}v_{ji}\)</span>. 再用 <span
+class="math inline">\(v_{jii} = (\Delta v)_j\)</span>, 再用 (1), 得到
+<span class="math inline">\(v_{jii} = - (|\partial
+v|^2)_j\)</span>.</li>
+<li>从而第三项 <span class="math inline">\(= 2\eta^2 (-|\partial
+v|^2_jv_j + v_{ij}v_{ij})\)</span>.</li>
+<li>由于 <span class="math inline">\(v_{ij}v_{ij} \geq \sum_i v_{ii}^2
+\geq (\Delta v)^2 / n = |\partial v|^4 / n\)</span>. 最后是 Cauchy
+不等式和 (1).</li>
+<li>从而大于 <span class="math inline">\(2\eta^2(|\partial v|^4 / n -
+|\partial v|_j^2v_j) = 2\eta^2|\partial v|^4 / n - 4\eta\eta_j|\partial
+v|^2v_j)\)</span>, 最后一步用了 (2').</li>
+</ul></li>
+</ul>
+<p>于是 <span class="math inline">\(0 \geq \Delta(\eta^2)|\partial v|^2
+-8\eta_i\eta_i |\partial v|^2 + 2\eta^2|\partial v|^4 / n -
+4\eta\eta_j|\partial v|^2v_j)\)</span>. 同除 <span
+class="math inline">\(Bv\)</span> (定义为 <span
+class="math inline">\(|\partial v|^2\)</span>), 得到</p>
+<p><span class="math display">\[0 \geq \Delta \eta^2 - 8B\eta + 2\eta^2
+|\partial v|^2 / n - 4\eta\eta_jv_j.\]</span></p>
+<p>用 Cauchy 不等式拆 <span class="math inline">\(4\eta\eta_i
+v_i\)</span>, 得到 <span class="math inline">\(\eta^2 Bv / n + 4n
+B\eta\)</span>, 带入 <span class="math inline">\(\eta_i =
+-2x_i\)</span>, <span class="math inline">\(B\eta = 4x^2\)</span>, <span
+class="math inline">\(\Delta \eta = -2n\)</span>, <span
+class="math inline">\(\Delta\eta^2 = 2\eta \Delta\eta +
+4\eta_i\eta_i\)</span>. 于是带入, 并利用 <span
+class="math inline">\(\eta^2 &lt; 1\)</span>, <span
+class="math inline">\(x^2 &lt; 1\)</span>:</p>
+<p><span class="math display">\[\begin{aligned}0 &amp;\geq -4n\eta +
+16x^2 - 32x^2 + \eta^2 Bv / n - 16nx^2\\ &amp;\geq -4n - 16 -16n +
+\eta^2 Bv / n.\end{aligned}\]</span></p>
+<p>即 <span class="math inline">\(20n + 16 \leq \eta^2 Bv /
+n\)</span>.</p>
+<p>于是 <span class="math display">\[\sup_{B_{1 / 2}} \eta^2 Bv / n \geq
+\sup_{B_{1 / 2}} Bv / n \inf_{B_{1 / 2}} \eta^2 \geq \frac{9}{16}
+\sup_{B_{1 / 2}} Bv / n.\]</span></p>
+<p>于是再用 (1), 得到 <span class="math inline">\(\sup_{B_{1 / 2}}
+\Delta v \leq \frac{16}{9} n (20n + 16)\)</span>.</p>
+<p>定理得证.</p>
 
       
     </div>
@@ -113,21 +200,12 @@ class="bd-box"><h-char class="bd bd-beg"><h-inner>。</h-inner></h-char></span>
     
 <nav id="article-nav">
   
-    <a href="../../../12/31/6854%202024%EF%BC%8C%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%EF%BC%81/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          2024，新年快乐！
-        
-      </div>
-    </a>
   
-  
-    <a href="../../../01/12/6500%20%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="../../15/7294%20Riemann%20%E5%87%A0%E4%BD%95%E5%A4%A7%E6%84%8F/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">
         
-          导数与微分
+          Riemann 几何大意
         
       </div>
     </a>
@@ -149,15 +227,15 @@ class="bd-box"><h-char class="bd bd-beg"><h-inner>。</h-inner></h-char></span>
       <ul>
         
           <li>
-            <a href="../../../../2025/03/16/7295%20%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%202%20%E7%AC%94%E8%AE%B0/">微分方程 2</a>
+            <a href="">微分方程 2</a>
           </li>
         
           <li>
-            <a href="../../../../2025/03/15/7294%20Riemann%20%E5%87%A0%E4%BD%95%E5%A4%A7%E6%84%8F/">Riemann 几何大意</a>
+            <a href="../../15/7294%20Riemann%20%E5%87%A0%E4%BD%95%E5%A4%A7%E6%84%8F/">Riemann 几何大意</a>
           </li>
         
           <li>
-            <a href="../../../../2025/03/13/7292%201.1-1.8/">Higher Dimensional Varieties 2016 1.1-1.8</a>
+            <a href="../../13/7292%201.1-1.8/">Higher Dimensional Varieties 2016 1.1-1.8</a>
           </li>
         
           <li>
@@ -177,15 +255,15 @@ class="bd-box"><h-char class="bd bd-beg"><h-inner>。</h-inner></h-char></span>
           </li>
         
           <li>
-            <a href="../../../12/31/6854%202024%EF%BC%8C%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%EF%BC%81/">2024，新年快乐！</a>
+            <a href="../../../../2023/12/31/6854%202024%EF%BC%8C%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%EF%BC%81/">2024，新年快乐！</a>
           </li>
         
           <li>
-            <a href="">同调代数-模论</a>
+            <a href="../../../../2023/10/27/6789%20%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0-%E6%A8%A1%E8%AE%BA/">同调代数-模论</a>
           </li>
         
           <li>
-            <a href="../../../01/12/6500%20%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">导数与微分</a>
+            <a href="../../../../2023/01/12/6500%20%E5%AF%BC%E6%95%B0%E4%B8%8E%E5%BE%AE%E5%88%86/">导数与微分</a>
           </li>
         
       </ul>
